@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jboss-deployment-structure xmlns="urn:jboss:deployment-structure:1.2">
+    <deployment>
+        <dependencies>
+            <!-- http://stackoverflow.com/questions/36252742/wildfly-10-bouncycastlecrypto-ecdsa-key-spec-not-recognized -->
+            <module name="org.bouncycastle"  slot="main" />
+        </dependencies>
+    </deployment>
+</jboss-deployment-structure>
