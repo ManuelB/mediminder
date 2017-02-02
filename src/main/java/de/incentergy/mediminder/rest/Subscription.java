@@ -32,7 +32,7 @@ public class Subscription {
     private static final Logger log = Logger
             .getLogger(Subscription.class.getName());
 
-    @PersistenceContext
+    @PersistenceContext(unitName="mediminder")
     EntityManager em;
 
     @POST

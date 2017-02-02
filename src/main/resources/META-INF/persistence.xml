@@ -4,7 +4,44 @@
 	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
 	<persistence-unit name="mediminder">
 		<properties>
-			<property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
+			<property name="javax.persistence.schema-generation.database.action"
+				value="drop-and-create" />
+		</properties>
+	</persistence-unit>
+	<persistence-unit name="arznei-mobil">
+		<jta-data-source>java:app/ArzneiMobil</jta-data-source>
+		<class>de.ifa.arznei.mobil.entities.Atc</class>
+		<class>de.ifa.arznei.mobil.entities.Artikel</class>
+		<class>de.ifa.arznei.mobil.entities.Darreichung</class>
+		<class>de.ifa.arznei.mobil.entities.Hersteller</class>
+		<class>de.ifa.arznei.mobil.entities.Icd</class>
+		<class>de.ifa.arznei.mobil.entities.IcdAtc</class>
+		<class>de.ifa.arznei.mobil.entities.ICD_Laien</class>
+		<class>de.ifa.arznei.mobil.entities.ICD_Synonym</class>
+		<class>de.ifa.arznei.mobil.entities.Interaktion</class>
+		<class>de.ifa.arznei.mobil.entities.Interaktion_Text</class>
+		<class>de.ifa.arznei.mobil.entities.Interaktion_Text_Typ</class>
+		<class>de.ifa.arznei.mobil.entities.Kontakte</class>
+		<class>de.ifa.arznei.mobil.entities.Produkt</class>
+		<class>de.ifa.arznei.mobil.entities.Produkt_Interaktion</class>
+		<class>de.ifa.arznei.mobil.entities.Produkt_Text</class>
+		<class>de.ifa.arznei.mobil.entities.Produkt_Wirkstoff</class>
+		<class>de.ifa.arznei.mobil.entities.Risikostufe</class>
+		<class>de.ifa.arznei.mobil.entities.Status</class>
+		<class>de.ifa.arznei.mobil.entities.TextTyp</class>
+		<class>de.ifa.arznei.mobil.entities.Texte</class>
+		<class>de.ifa.arznei.mobil.entities.Wirkstoff</class>
+		<class>de.ifa.arznei.mobil.entities.AndroidMetadata</class>
+		<class>de.ifa.arznei.mobil.entities.Teilbarkeit</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<properties>
+			<!-- Bind entity manager factory to JNDI at java:jboss/myEntityManagerFactory -->
+			<property name="jboss.entity.manager.factory.jndi.name"
+				value="java:/arzneiMobilEntityManagerFactory" />
+			<property name="hibernate.dialect" value="org.hibernate.dialect.SQLiteDialect" />
+
+			<property name="hibernate.connection.driver_class" value="org.sqlite.JDBC" />
+			<property name="jboss.entity.manager.jndi.name" value="java:/arzneiMobilEntityManager" />
 		</properties>
 	</persistence-unit>
 </persistence>
