@@ -22,7 +22,7 @@ public class Produkt_Text implements Serializable {
 
 	// bi-directional many-to-one association to Produkt
 	@ManyToOne
-	@JoinColumns({ @JoinColumn(name = "Product_ID", referencedColumnName = "_id") })
+	@JoinColumns({ @JoinColumn(name = "Produkt_ID", referencedColumnName = "_id") })
 	private Produkt produkt;
 
 	// bi-directional many-to-one association to TextTyp
@@ -32,7 +32,7 @@ public class Produkt_Text implements Serializable {
 
 	// bi-directional one-to-one association to Texte
 	@OneToOne
-	@JoinColumns({ @JoinColumn(name = "Text_ID", referencedColumnName = "_id") })
+	@JoinColumns({ @JoinColumn(name = "Text_ID", referencedColumnName = "_id", updatable=false, insertable=false) })
 	private Texte texte;
 
 	public Produkt_Text() {

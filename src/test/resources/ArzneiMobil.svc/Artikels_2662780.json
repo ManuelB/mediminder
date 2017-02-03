@@ -1,0 +1,452 @@
+{
+	"d": {
+		"__metadata": {
+			"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Artikels(2662780)",
+			"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Artikels(2662780)",
+			"type": "arznei-mobil.Artikel"
+		},
+		"Aenderungsdatum": "01.07.2016",
+		"Avp": "6.97",
+		"Hinweise": "",
+		"Id": 2662780,
+		"Menge": "50 ST",
+		"Neuerscheinung": 0,
+		"Norm": "N2",
+		"Produkt": 404313,
+		"Pvgl": 10280704,
+		"Sortiment_Diaetetika": "0",
+		"Sortiment_Diagnostika": "0",
+		"Sortiment_Enterale_Ernaehrung": "0",
+		"Sortiment_Hilfsmittel": "0",
+		"Sortiment_Homoeopathika": "0",
+		"Sortiment_IFAP": "1",
+		"Sortiment_KlinikArznei": "1",
+		"Sortiment_Schwangerschaftstest": "0",
+		"Sortiment_Teststreifen": "0",
+		"Sortiment_Tierarzneimittel": 0,
+		"Sortiment_Verbandmittel": "0",
+		"Teilbarkeit": "1",
+		"Zuzahlung": "5",
+		"ProduktDetails": {
+			"__metadata": {
+				"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkts(404313)",
+				"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkts(404313)",
+				"type": "arznei-mobil.Produkt"
+			},
+			"Atc": "R06AE07",
+			"Bezeichnung": "Cetirizin Adgc",
+			"Darreichung": "FTA",
+			"Id": 404313,
+			"Online": 0,
+			"Zusammensetzung_String": "Cetirizin 8.42mg",
+			"ArtikelDetails": {
+				"__deferred": {
+					"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkts(404313)/ArtikelDetails"
+				}
+			},
+			"AtcDetails": {
+				"__deferred": {
+					"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkts(404313)/AtcDetails"
+				}
+			},
+			"DarreichungDetails": {
+				"__deferred": {
+					"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkts(404313)/DarreichungDetails"
+				}
+			},
+			"Produkt_InteraktionDetails": {
+				"__deferred": {
+					"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkts(404313)/Produkt_InteraktionDetails"
+				}
+			},
+			"Produkt_TextDetails": {
+				"results": [{
+					"__metadata": {
+						"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(116407)",
+						"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(116407)",
+						"type": "arznei-mobil.Produkt_Text"
+					},
+					"Produkt": 404313,
+					"Schweregrad": "0",
+					"TextTyp": 23,
+					"Text_ID": 116407,
+					"ProduktDetails": {
+						"__deferred": {
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(116407)/ProduktDetails"
+						}
+					},
+					"TextTypDetails": {
+						"__metadata": {
+							"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(23)",
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(23)",
+							"type": "arznei-mobil.TextTyp"
+						},
+						"Bezeichnung": "Nebenwirkungen",
+						"Id": 23,
+						"Produkt_TextDetails": {
+							"__deferred": {
+								"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(23)/Produkt_TextDetails"
+							}
+						}
+					},
+					"TexteDetails": {
+						"__metadata": {
+							"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Textes(116407)",
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Textes(116407)",
+							"type": "arznei-mobil.Texte"
+						},
+						"Id": 116407,
+						"Text_Data": "<h2 style=\"font-size:medium\">Nebenwirkungen, Wirkstoffprofil <br />(kumulative Wirkstoffangaben ohne Berücksichtigung des individuellen Zulassungsstatus)</h2><br /><ul><li>Erkrankungen des Blutes und des Lymphsystems<ul><li>sehr selten: kleiner 1/10000, einschließlich Einzelfälle<ul><li>Thrombozytopenie</li></ul></li></ul></li><li>Erkrankungen des Immunsystems<ul><li>selten: größer bzw. gleich 1/10000 bis kleiner 1/1000<ul><li>Überempfindlichkeit</li></ul></li><li>sehr selten: kleiner 1/10000, einschließlich Einzelfälle<ul><li>anaphylaktischer Schock</li></ul></li></ul></li><li>Psychiatrische Erkrankungen<ul><li>gelegentlich: größer bzw. gleich 1/1000 bis kleiner 1/100<ul><li>Agitiertheit</li></ul></li><li>selten: größer bzw. gleich 1/10000 bis kleiner 1/1000<ul><li>Aggressivität</li><li>Verwirrtheit</li><li>Depressionen</li><li>Halluzinationen</li><li>Schlaflosigkeit</li></ul></li><li>sehr selten: kleiner 1/10000, einschließlich Einzelfälle<ul><li>Tic</li></ul></li></ul></li><li>Erkrankungen des Nervensystems<ul><li>häufig: größer bzw. gleich 1/100 bis kleiner 1/10<ul><li>Kopfschmerzen</li><li>Benommenheit</li><li>Schläfrigkeit</li></ul></li><li>gelegentlich: größer bzw. gleich 1/1000 bis kleiner 1/100<ul><li>Schwindel</li><li>Empfindungsstörungen, Parästhesie</li></ul></li><li>selten: größer bzw. gleich 1/10000 bis kleiner 1/1000<ul><li>Krämpfe</li><li>Bewegungsstörungen</li></ul></li><li>sehr selten: kleiner 1/10000, einschließlich Einzelfälle<ul><li>Synkopen</li><li>Tremor, Dystonie, Dyskinesie</li><li>Geschmacksstörungen</li></ul></li></ul></li><li>Augenerkrankungen<ul><li>sehr selten: kleiner 1/10000, einschließlich Einzelfälle<ul><li>Akkommodationsstörungen</li><li>Verschwommensehen</li><li>okulogyrische Krise, insbesondere bei Kindern.</li></ul></li></ul></li><li>Herzerkrankungen<ul><li>selten: größer bzw. gleich 1/10000 bis kleiner 1/1000<ul><li>Tachykardie</li></ul></li></ul></li><li>Erkrankungen des Gastrointestinaltrakts<ul><li>häufig: größer bzw. gleich 1/100 bis kleiner 1/10<ul><li>Mundtrockenheit</li></ul></li><li>gelegentlich: größer bzw. gleich 1/1000 bis kleiner 1/100<ul><li>Bauchbeschwerden, wie z. B. Bauchschmerzen, Übelkeit, Diarrhoe, Verdauungsstörungen.</li></ul></li></ul></li><li>Leber- und Gallenerkrankungen<ul><li>selten: größer bzw. gleich 1/10000 bis kleiner 1/1000<ul><li>anormale Leberfunktion (Erhöhung der Transaminase, alkalischen Phosphatase, gamma-GT und des Bilirubins)</li></ul></li><li>sehr selten: kleiner 1/10000, einschließlich Einzelfälle<ul><li>Hepatitis</li></ul></li></ul></li><li>Erkrankungen der Haut und des Unterhautzellgewebes<ul><li>gelegentlich: größer bzw. gleich 1/1000 bis kleiner 1/100<ul><li>Ausschlag</li><li>Pruritus</li></ul></li><li>selten: größer bzw. gleich 1/10000 bis kleiner 1/1000<ul><li>Urtikaria</li></ul></li><li>sehr selten: kleiner 1/10000, einschließlich Einzelfälle<ul><li>angioneurotisches Ödem / Quincke-Ödem</li><li>Erythema multiforme, fixes Arzneimittelexanthem</li></ul></li></ul></li><li>Erkrankungen der Nieren und der Harnwege<ul><li>sehr selten: kleiner 1/10000, einschließlich Einzelfälle<ul><li>Dysurie</li><li>Enurese</li><li>Miktionsstörungen</li></ul></li></ul></li><li>Allgemeine Erkrankungen und Beschwerden am Verabreichungsort<ul><li>häufig: größer bzw. gleich 1/100 bis kleiner 1/10<ul><li>Müdigkeit</li></ul></li><li>gelegentlich: größer bzw. gleich 1/1000 bis kleiner 1/100<ul><li>Asthenie</li><li>Unwohlsein</li></ul></li><li>selten: größer bzw. gleich 1/10000 bis kleiner 1/1000<ul><li>Ödeme</li></ul></li></ul></li><li>Untersuchungen<ul><li>selten: größer bzw. gleich 1/10000 bis kleiner 1/1000<ul><li>Gewichtszunahme</li></ul></li></ul></li></ul>"
+					}
+				}, {
+					"__metadata": {
+						"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(116409)",
+						"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(116409)",
+						"type": "arznei-mobil.Produkt_Text"
+					},
+					"Produkt": 404313,
+					"Schweregrad": "0",
+					"TextTyp": 25,
+					"Text_ID": 116409,
+					"ProduktDetails": {
+						"__deferred": {
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(116409)/ProduktDetails"
+						}
+					},
+					"TextTypDetails": {
+						"__metadata": {
+							"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(25)",
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(25)",
+							"type": "arznei-mobil.TextTyp"
+						},
+						"Bezeichnung": "Hinweise und Vorsichtsmaßnahmen",
+						"Id": 25,
+						"Produkt_TextDetails": {
+							"__deferred": {
+								"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(25)/Produkt_TextDetails"
+							}
+						}
+					},
+					"TexteDetails": {
+						"__metadata": {
+							"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Textes(116409)",
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Textes(116409)",
+							"type": "arznei-mobil.Texte"
+						},
+						"Id": 116409,
+						"Text_Data": "<h2 style=\"font-size:medium\">Hinweise und Vorsichtsmaßnahmen, Wirkstoffprofil <br />(kumulative Wirkstoffangaben ohne Berücksichtigung des individuellen Zulassungsstatus)</h2><br /><ul><li>Erhöhtes Risiko für Karies (bei Langzeitbehandlung)<ul><li>kann aufgrund von Mundtrockenheit zu einem erhöhten Risiko von Karies führen</li><li>Patienten sollten über die Wichtigkeit der Mundhygiene aufgeklärt werden</li></ul></li><li>Patienten mit Epilepsie und bei Patienten mit Krampfneigung <ul><li>Vorsicht bei der Anwendung</li></ul></li><li>eingeschränkte Leber- und Nierenfunktion<ul><li>Elimination von Cetirizin kann herabgesetzt sein</li><li>Anwendung sollte mit Vorsicht erfolgen</li></ul></li><li>Säuglinge und Kinder unter 2 Jahren<ul><li>noch keine ausreichenden Erfahrungen</li><li>sollten nicht mit Cetirizin behandelt werden</li></ul></li><li>Alkohol<ul><li>Cetirzin kann Wirkung von Alkohol verstärken</li><li>bei therapeutischen Dosierungen und einem Alkoholblutspiegel von 0,5 g / l keine klinisch signifikanten Wechselwirkungen beobachtet</li><li>dennoch Vorsicht bei bei gleichzeitiger Einnahme</li></ul></li><li>gleichzeitige Anwendung von ZNS-Depressiva<ul><li>Vorsicht bei der Anwendung</li></ul><br /></li></ul>"
+					}
+				}, {
+					"__metadata": {
+						"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(859255)",
+						"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(859255)",
+						"type": "arznei-mobil.Produkt_Text"
+					},
+					"Produkt": 404313,
+					"Schweregrad": "0",
+					"TextTyp": 27,
+					"Text_ID": 859255,
+					"ProduktDetails": {
+						"__deferred": {
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(859255)/ProduktDetails"
+						}
+					},
+					"TextTypDetails": {
+						"__metadata": {
+							"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(27)",
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(27)",
+							"type": "arznei-mobil.TextTyp"
+						},
+						"Bezeichnung": "Art der Anwendung",
+						"Id": 27,
+						"Produkt_TextDetails": {
+							"__deferred": {
+								"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(27)/Produkt_TextDetails"
+							}
+						}
+					},
+					"TexteDetails": {
+						"__metadata": {
+							"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Textes(859255)",
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Textes(859255)",
+							"type": "arznei-mobil.Texte"
+						},
+						"Id": 859255,
+						"Text_Data": "<h2 style=\"font-size:medium\">Art der Anwendung</h2><br /><ul><li>Einnahme unzerkaut mit Flüssigkeit, vorzugsweise abends</li><li>Einnahme unabhängig von den Mahlzeiten</li><li>bei Einnahme von 20 mg (2 Filmtabletten) / Tag zur unterstützenden Behandlung asthmoider Zustände allergischer Herkunft<ul><li>vorzugsweise je 10 mg (1 Filmtablette) morgens und abends</li></ul></li><li>Kinder mit KG &gt; 30 kg<ul><li>Verteilung auf zwei Einzelgaben 5 mg (je eine halbe Tablette morgens und abends) ist in Einzelfällen möglich</li></ul></li></ul>"
+					}
+				}, {
+					"__metadata": {
+						"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(859252)",
+						"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(859252)",
+						"type": "arznei-mobil.Produkt_Text"
+					},
+					"Produkt": 404313,
+					"Schweregrad": "0",
+					"TextTyp": 24,
+					"Text_ID": 859252,
+					"ProduktDetails": {
+						"__deferred": {
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(859252)/ProduktDetails"
+						}
+					},
+					"TextTypDetails": {
+						"__metadata": {
+							"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(24)",
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(24)",
+							"type": "arznei-mobil.TextTyp"
+						},
+						"Bezeichnung": "Dosierung",
+						"Id": 24,
+						"Produkt_TextDetails": {
+							"__deferred": {
+								"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(24)/Produkt_TextDetails"
+							}
+						}
+					},
+					"TexteDetails": {
+						"__metadata": {
+							"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Textes(859252)",
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Textes(859252)",
+							"type": "arznei-mobil.Texte"
+						},
+						"Id": 859252,
+						"Text_Data": "<h2 style=\"font-size:medium\">Dosierung</h2><br /><ul><li>symptomatische Behandlung allergischer Erkrankungen wie Urticaria, chronisch allergischer Schnupfen, Heuschnupfen<ul><li>Erwachsene und Jugendliche (&gt; 12 Jahre)<ul><li>1 Filmtablette (10 mg Cetirizindihydrochlorid) 1mal / Tag</li></ul></li><li>Behandlungdauer: je nach Art, Dauer und Verlauf der Beschwerden<ul><li>Heuschnupfen<ul><li>3 - 6 Wochen</li></ul></li><li>kurzfristige Pollenbelastung<ul><li>1 Woche</li></ul></li><li>chronische Nesselsucht und chronischer allergischer Schnupfen<ul><li>bis zu 1 Jahr</li></ul></li></ul></li></ul></li><li>unterstützende Behandlung asthmoider Zustände allergischer Herkunft<ul><li>1 Filmtablette (10 mg Cetirizindihydrochlorid) 2mal / Tag</li><li>Behandlungsdauer: bis zu 6 Monate</li></ul></li></ul><p>Dosisanpassung</p><ul><li>Niereninsuffizienz<ul><li>50%ige Dosisreduktion</li></ul></li><li>Leberinsuffizienz<ul><li>v.a. bei gleichzeitiger Niereninsuffizienz: individuelle Dosiseinstellung erforderlich</li></ul></li><li>Kinder (2 - 12 Jahre)<ul><li>KG &lt; 30 kg<ul><li>1/2 Filmtablette (5 mg Cetirizindihydrochlorid) 1mal / Tag</li></ul></li><li>KG &gt; 30 kg<ul><li>1 Filmtablette (10 mg Cetirizindihydrochlorid) 1mal / Tag</li><li>in Einzelfällen<ul><li>1/2 Tablette (5 mg Cetirizindihydrochlorid) 2mal / Tag</li></ul></li></ul></li><li>Behandlungsdauer: 2 - 4 Wochen<ul><li>kurzfristige Allergenbelastung<ul><li>1 Woche</li></ul></li><li>atopische Dermatitis<ul><li>bis zu 18 Monate</li></ul></li></ul></li></ul></li></ul>"
+					}
+				}, {
+					"__metadata": {
+						"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(116412)",
+						"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(116412)",
+						"type": "arznei-mobil.Produkt_Text"
+					},
+					"Produkt": 404313,
+					"Schweregrad": "4",
+					"TextTyp": 28,
+					"Text_ID": 116412,
+					"ProduktDetails": {
+						"__deferred": {
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(116412)/ProduktDetails"
+						}
+					},
+					"TextTypDetails": {
+						"__metadata": {
+							"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(28)",
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(28)",
+							"type": "arznei-mobil.TextTyp"
+						},
+						"Bezeichnung": "Schwangerschaftshinweise",
+						"Id": 28,
+						"Produkt_TextDetails": {
+							"__deferred": {
+								"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(28)/Produkt_TextDetails"
+							}
+						}
+					},
+					"TexteDetails": {
+						"__metadata": {
+							"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Textes(116412)",
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Textes(116412)",
+							"type": "arznei-mobil.Texte"
+						},
+						"Id": 116412,
+						"Text_Data": "<h2 style=\"font-size:medium\">Schwangerschaftshinweise</h2><br /><ul><li>in experimentellen Studien an Tieren keine schädigenden Wirkungen auf den Verlauf der Trächtigkeit, die embryonale/fötale Entwicklung, den Geburtsvorgang oder die postnatale Entwicklung beobachtet</li><li>denn sollte Anwendung vermieden werden, da keine ausreichende Erfahrung in der Schwangerschaft</li></ul>"
+					}
+				}, {
+					"__metadata": {
+						"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(116413)",
+						"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(116413)",
+						"type": "arznei-mobil.Produkt_Text"
+					},
+					"Produkt": 404313,
+					"Schweregrad": "2",
+					"TextTyp": 29,
+					"Text_ID": 116413,
+					"ProduktDetails": {
+						"__deferred": {
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(116413)/ProduktDetails"
+						}
+					},
+					"TextTypDetails": {
+						"__metadata": {
+							"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(29)",
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(29)",
+							"type": "arznei-mobil.TextTyp"
+						},
+						"Bezeichnung": "Stillzeithinweise",
+						"Id": 29,
+						"Produkt_TextDetails": {
+							"__deferred": {
+								"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(29)/Produkt_TextDetails"
+							}
+						}
+					},
+					"TexteDetails": {
+						"__metadata": {
+							"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Textes(116413)",
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Textes(116413)",
+							"type": "arznei-mobil.Texte"
+						},
+						"Id": 116413,
+						"Text_Data": "<h2 style=\"font-size:medium\">Stillzeithinweise</h2><br /><ul><li>kontraindiziert in der Stillzeit</li><li>Übergang in die Muttermilch</li></ul>"
+					}
+				}, {
+					"__metadata": {
+						"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(120022)",
+						"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(120022)",
+						"type": "arznei-mobil.Produkt_Text"
+					},
+					"Produkt": 404313,
+					"Schweregrad": "0",
+					"TextTyp": 61,
+					"Text_ID": 120022,
+					"ProduktDetails": {
+						"__deferred": {
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(120022)/ProduktDetails"
+						}
+					},
+					"TextTypDetails": {
+						"__metadata": {
+							"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(61)",
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(61)",
+							"type": "arznei-mobil.TextTyp"
+						},
+						"Bezeichnung": "CGSW_Verkehrstüchtigkeit/Bedienung von Maschinen",
+						"Id": 61,
+						"Produkt_TextDetails": {
+							"__deferred": {
+								"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(61)/Produkt_TextDetails"
+							}
+						}
+					},
+					"TexteDetails": {
+						"__metadata": {
+							"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Textes(120022)",
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Textes(120022)",
+							"type": "arznei-mobil.Texte"
+						},
+						"Id": 120022,
+						"Text_Data": "<ul><li>in vergleichenden klinischen Studien kein Hinweis auf eine Beeinträchtigung des Reaktionsvermögens (nach Einnahme in der empfohlenen Dosis)</li><li>Empfehlung für Patienten, die Auto fahren, ohne sicheren Halt arbeiten oder Maschinen bedienen: <ul><li>angegebene Dosierung nicht überschreiten</li><li>individuelle Reaktion auf das Medikament abwarten</li></ul></li><li>gleichzeitige Einnahme mit Alkohol oder zentral dämpfenden Mitteln kann zu einer zusätzlichen Reduktion der Aufmerksamkeit und einer Leistungsbeeinträchtigung führen</li></ul>"
+					}
+				}, {
+					"__metadata": {
+						"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(116406)",
+						"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(116406)",
+						"type": "arznei-mobil.Produkt_Text"
+					},
+					"Produkt": 404313,
+					"Schweregrad": "0",
+					"TextTyp": 22,
+					"Text_ID": 116406,
+					"ProduktDetails": {
+						"__deferred": {
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(116406)/ProduktDetails"
+						}
+					},
+					"TextTypDetails": {
+						"__metadata": {
+							"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(22)",
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(22)",
+							"type": "arznei-mobil.TextTyp"
+						},
+						"Bezeichnung": "Kontraindikation (absolut)",
+						"Id": 22,
+						"Produkt_TextDetails": {
+							"__deferred": {
+								"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(22)/Produkt_TextDetails"
+							}
+						}
+					},
+					"TexteDetails": {
+						"__metadata": {
+							"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Textes(116406)",
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Textes(116406)",
+							"type": "arznei-mobil.Texte"
+						},
+						"Id": 116406,
+						"Text_Data": "<h2 style=\"font-size:medium\">Kontraindikation (absolut), Wirkstoffprofil <br />(kumulative Wirkstoffangaben ohne Berücksichtigung des individuellen Zulassungsstatus)</h2><br /><ul><li>Überempfindlichkeit gegen Cetirizin, Hydroxyzin oder andere Piperazin-Derivate</li><li>schwere Niereninsuffizienz mit einer Kreatinin-Clearance &lt; 10ml / Min.</li><li>Kinder unter 2 Jahren</li><li>Stillzeit</li></ul>"
+					}
+				}, {
+					"__metadata": {
+						"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(859249)",
+						"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(859249)",
+						"type": "arznei-mobil.Produkt_Text"
+					},
+					"Produkt": 404313,
+					"Schweregrad": "0",
+					"TextTyp": 21,
+					"Text_ID": 859249,
+					"ProduktDetails": {
+						"__deferred": {
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(859249)/ProduktDetails"
+						}
+					},
+					"TextTypDetails": {
+						"__metadata": {
+							"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(21)",
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(21)",
+							"type": "arznei-mobil.TextTyp"
+						},
+						"Bezeichnung": "Indikation",
+						"Id": 21,
+						"Produkt_TextDetails": {
+							"__deferred": {
+								"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(21)/Produkt_TextDetails"
+							}
+						}
+					},
+					"TexteDetails": {
+						"__metadata": {
+							"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Textes(859249)",
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Textes(859249)",
+							"type": "arznei-mobil.Texte"
+						},
+						"Id": 859249,
+						"Text_Data": "<h2 style=\"font-size:medium\">Indikation</h2><br /><ul><li>symptomatische Behandlung bei allergischen Erkrankungen wie<ul><li>Urticaria mit Beschwerden wie Juckreiz, Quaddelbildung, Rötung der Haut</li><li>chronischer allergischer Schnupfen</li><li>Heuschnupfen mit Beschwerden wie Niesen, Nasenlaufen, Nasenjucken, Nasenverstopfung, Rötung / Jucken der Augen, Tränenfluss</li></ul></li><li>asthmoide Zustände allergischer Herkunft</li><li>unterstützend zur Unterdrückung entsprechender Beschwerden</li></ul>"
+					}
+				}, {
+					"__metadata": {
+						"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(4803)",
+						"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(4803)",
+						"type": "arznei-mobil.Produkt_Text"
+					},
+					"Produkt": 404313,
+					"Schweregrad": "0",
+					"TextTyp": 40,
+					"Text_ID": 4803,
+					"ProduktDetails": {
+						"__deferred": {
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(4803)/ProduktDetails"
+						}
+					},
+					"TextTypDetails": {
+						"__metadata": {
+							"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(40)",
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(40)",
+							"type": "arznei-mobil.TextTyp"
+						},
+						"Bezeichnung": "Hinweise / Warnhinweise für Anwendung und Dosierung",
+						"Id": 40,
+						"Produkt_TextDetails": {
+							"__deferred": {
+								"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(40)/Produkt_TextDetails"
+							}
+						}
+					},
+					"TexteDetails": {
+						"__metadata": {
+							"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Textes(4803)",
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Textes(4803)",
+							"type": "arznei-mobil.Texte"
+						},
+						"Id": 4803,
+						"Text_Data": "<h2 style=\"font-size:medium\">Hinweise / Warnhinweise für Anwendung und Dosierung</h2><br />Mit Flüssigkeit einnehmen."
+					}
+				}]
+			},
+			"Produkt_WirkstoffDetails": {
+				"__deferred": {
+					"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkts(404313)/Produkt_WirkstoffDetails"
+				}
+			}
+		}
+	}
+}

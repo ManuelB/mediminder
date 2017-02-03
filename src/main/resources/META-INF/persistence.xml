@@ -42,6 +42,13 @@
 
 			<property name="hibernate.connection.driver_class" value="org.sqlite.JDBC" />
 			<property name="jboss.entity.manager.jndi.name" value="java:/arzneiMobilEntityManager" />
+			<!-- Caused by: org.hibernate.LazyInitializationException: could not initialize proxy - no Session
+14:33:07,941 ERROR [stderr] (default task-33) 	at org.hibernate.proxy.AbstractLazyInitializer.initialize(AbstractLazyInitializer.java:148)
+14:33:07,941 ERROR [stderr] (default task-33) 	at org.hibernate.proxy.AbstractLazyInitializer.getImplementation(AbstractLazyInitializer.java:266)
+14:33:07,941 ERROR [stderr] (default task-33) 	at org.hibernate.proxy.pojo.javassist.JavassistLazyInitializer.invoke(JavassistLazyInitializer.java:73)
+14:33:07,942 ERROR [stderr] (default task-33) 	at de.ifa.arznei.mobil.entities.Produkt_$$_jvst52a_95.getId(Produkt_$$_jvst52a_95.java)
+14:33:07,942 ERROR [stderr] (default task-33) 	... 68 more -->
+			<property name="hibernate.enable_lazy_load_no_trans" value="true"/>
 		</properties>
 	</persistence-unit>
 </persistence>

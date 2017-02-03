@@ -30,9 +30,6 @@ public class Produkt_Interaktion implements Serializable {
 	@Column(name = "_id")
 	private int id;
 	
-	@Column(name="Interaktion_ID")
-	private int interaktion_ID;
-
 	@Column(name="Seite")
 	private String seite;
 
@@ -40,6 +37,10 @@ public class Produkt_Interaktion implements Serializable {
 	@ManyToOne()
 	@JoinColumns({ @JoinColumn(name = "_id", referencedColumnName = "_id", insertable = false, updatable = false) })
 	private Produkt produkt;
+	
+	@ManyToOne()
+	@JoinColumns({ @JoinColumn(name = "Interaktion_ID", referencedColumnName = "_id") })
+	private Interaktion interaktion;
 
 	public Produkt_Interaktion() {
 	}
@@ -52,12 +53,12 @@ public class Produkt_Interaktion implements Serializable {
 		this.id = id;
 	}
 
-	public int getInteraktion_ID() {
-		return this.interaktion_ID;
+	public Interaktion getInteraktion() {
+		return this.interaktion;
 	}
 
-	public void setInteraktion_ID(int interaktion_ID) {
-		this.interaktion_ID = interaktion_ID;
+	public void setInteraktion_ID(Interaktion interaktion) {
+		this.interaktion = interaktion;
 	}
 
 	public String getSeite() {

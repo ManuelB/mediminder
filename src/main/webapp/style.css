@@ -7,6 +7,11 @@ and open the template in the editor.
     Created on : Jan 28, 2017, 5:55:49 PM
     Author     : manuel
 */
+body {	
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f1f1f1;
+}
 
 #interactive.viewport {
     position: relative;

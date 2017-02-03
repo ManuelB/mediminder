@@ -5,13 +5,11 @@
  * happen when we receive a push notification.
  * If you are using webpack, see the section below.
  */
-$(function () {
-    if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('service-worker.js').then(initialiseState);
-    } else {
-        console.warn('Service workers are not supported in this browser.');
-    }
-});
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js').then(initialiseState);
+} else {
+    console.warn('Service workers are not supported in this browser.');
+}
 
 /**
  * Step two: The serviceworker is registered (started) in the browser. Now we

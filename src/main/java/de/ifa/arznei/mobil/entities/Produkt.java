@@ -56,6 +56,9 @@ public class Produkt implements Serializable {
 
 	@OneToMany(mappedBy = "produkt")
 	private List<Produkt_Interaktion> produktInteraktions;
+	
+	@OneToMany(mappedBy= "produkt")
+	private List<Produkt_Text> produktTexte;
 
 	public Produkt() {
 	}
@@ -122,6 +125,22 @@ public class Produkt implements Serializable {
 
 	public void setDarreichung(Darreichung darreichung) {
 		this.darreichung = darreichung;
+	}
+
+	public List<Produkt_Interaktion> getProduktInteraktions() {
+		return produktInteraktions;
+	}
+
+	public void setProduktInteraktions(List<Produkt_Interaktion> produktInteraktions) {
+		this.produktInteraktions = produktInteraktions;
+	}
+
+	public List<Produkt_Text> getProduktTexte() {
+		return produktTexte;
+	}
+
+	public void setProduktTexte(List<Produkt_Text> produktTexte) {
+		this.produktTexte = produktTexte;
 	}
 
 }

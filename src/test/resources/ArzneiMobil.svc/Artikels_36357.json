@@ -1,0 +1,490 @@
+{
+	"d": {
+		"__metadata": {
+			"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Artikels(36357)",
+			"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Artikels(36357)",
+			"type": "arznei-mobil.Artikel"
+		},
+		"Aenderungsdatum": "01.07.2014",
+		"Avp": "21.27",
+		"Hinweise": "Rezeptpflichtig",
+		"Id": 36357,
+		"Menge": "28 ST",
+		"Neuerscheinung": 0,
+		"Norm": "N3",
+		"Produkt": 376655,
+		"Pvgl": 10410816,
+		"Sortiment_Diaetetika": "0",
+		"Sortiment_Diagnostika": "0",
+		"Sortiment_Enterale_Ernaehrung": "0",
+		"Sortiment_Hilfsmittel": "0",
+		"Sortiment_Homoeopathika": "0",
+		"Sortiment_IFAP": "1",
+		"Sortiment_KlinikArznei": "1",
+		"Sortiment_Schwangerschaftstest": "0",
+		"Sortiment_Teststreifen": "0",
+		"Sortiment_Tierarzneimittel": 0,
+		"Sortiment_Verbandmittel": "0",
+		"Teilbarkeit": "1",
+		"Zuzahlung": "5",
+		"ProduktDetails": {
+			"__metadata": {
+				"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkts(376655)",
+				"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkts(376655)",
+				"type": "arznei-mobil.Produkt"
+			},
+			"Atc": "J01MA02",
+			"Bezeichnung": "Cipro 1A Pharma 500mg",
+			"Darreichung": "FTA",
+			"Id": 376655,
+			"Online": 0,
+			"Zusammensetzung_String": "Ciprofloxacin 500mg",
+			"ArtikelDetails": {
+				"__deferred": {
+					"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkts(376655)/ArtikelDetails"
+				}
+			},
+			"AtcDetails": {
+				"__deferred": {
+					"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkts(376655)/AtcDetails"
+				}
+			},
+			"DarreichungDetails": {
+				"__deferred": {
+					"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkts(376655)/DarreichungDetails"
+				}
+			},
+			"Produkt_InteraktionDetails": {
+				"__deferred": {
+					"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkts(376655)/Produkt_InteraktionDetails"
+				}
+			},
+			"Produkt_TextDetails": {
+				"results": [{
+					"__metadata": {
+						"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(177711)",
+						"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(177711)",
+						"type": "arznei-mobil.Produkt_Text"
+					},
+					"Produkt": 376655,
+					"Schweregrad": "0",
+					"TextTyp": 24,
+					"Text_ID": 177711,
+					"ProduktDetails": {
+						"__deferred": {
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(177711)/ProduktDetails"
+						}
+					},
+					"TextTypDetails": {
+						"__metadata": {
+							"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(24)",
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(24)",
+							"type": "arznei-mobil.TextTyp"
+						},
+						"Bezeichnung": "Dosierung",
+						"Id": 24,
+						"Produkt_TextDetails": {
+							"__deferred": {
+								"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(24)/Produkt_TextDetails"
+							}
+						}
+					},
+					"TexteDetails": {
+						"__metadata": {
+							"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Textes(177711)",
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Textes(177711)",
+							"type": "arznei-mobil.Texte"
+						},
+						"Id": 177711,
+						"Text_Data": "<h2 style=\"font-size:medium\">Dosierung</h2><br /><ul><li>Erwachsene:<ul><li>Infektionen der unteren Atemwege:<ul><li>500 - 750 mg 2mal / Tag</li><li>Gesamtbehandlungsdauer (evtl. einschliesslich einer anfänglichen parenteralen Behandlung mit Ciprofloxacin): 7 - 14 Tage</li></ul></li><li>Infektionen der oberen Atemwege:<ul><li>Akute Exazerbation einer chronischen Sinusitis:<ul><li>500 - 750 mg 2mal / Tag</li><li>Gesamtbehandlungsdauer (evtl. einschliesslich einer anfänglichen parenteralen Behandlung mit Ciprofloxacin): 7 - 14 Tage</li></ul></li><li>Chronische eitrige Otitis media:<ul><li>500 - 750 mg 2mal / Tag</li><li>Gesamtbehandlungsdauer (evtl. einschliesslich einer anfänglichen parenteralen Behandlung mit Ciprofloxacin): 7 - 14 Tage</li></ul></li><li>Maligne externe Otitis:<ul><li>750 mg 2mal / Tag</li><li>Gesamtbehandlungsdauer (evtl. einschliesslich einer anfänglichen parenteralen Behandlung mit Ciprofloxacin): 28 Tage - 3 Monate</li></ul></li></ul></li><li>Harnwegsinfektionen:<ul><li>Unkomplizierte Zystitis:<ul><li>250 - 500 mg 2mal / Tag</li><li>Gesamtbehandlungsdauer (evtl. einschliesslich einer anfänglichen parenteralen Behandlung mit Ciprofloxacin): 3 Tage</li><li>präklimakterische Frauen: 500 mg als Einzeldosis</li></ul></li><li>Komplizierte Zystitis, Unkomplizierte Pyelonephritis:<ul><li>500 mg 2mal / Tag</li><li>Gesamtbehandlungsdauer (evtl. einschliesslich einer anfänglichen parenteralen Behandlung mit Ciprofloxacin): 7 Tage</li></ul></li><li>Komplizierte Pyelonephritis:<ul><li>500 - 750 mg 2mal / Tag</li><li>Gesamtbehandlungsdauer (evtl. einschliesslich einer anfänglichen parenteralen Behandlung mit Ciprofloxacin): <ul><li>mind. 10 Tage</li><li>unter bestimmten Umständen (wie Abszesse): &gt; 21 Tage</li></ul></li></ul></li><li>Prostatitis:<ul><li>500 - 750 mg 2mal / Tag</li><li>Gesamtbehandlungsdauer (evtl. einschliesslich einer anfänglichen parenteralen Behandlung mit Ciprofloxacin):<ul><li>akut: 2 - 4 Wochen</li><li>chronisch: 4 - 6 Wochen</li></ul></li></ul></li></ul></li><li>Infektionen des Genitaltraktes:<ul><li>Gonokokken-Urethritis und -Zervizitis:<ul><li>500 mg als Einzeldosis</li></ul></li><li>Epididymo-orchitis und entzündliche Erkrankungen des Beckens:<ul><li>500 - 750 mg 2mal / Tag</li><li>Gesamtbehandlungsdauer (evtl. einschliesslich einer anfänglichen parenteralen Behandlung mit Ciprofloxacin): mind. 14 Tage</li><li>falls Ciprofloxacin resistente Neisseria gonorrhoeae nicht ausgeschlossen werden können: <ul><li>Kombination mit anderen geeigneten antibakteriellen Substanzen</li></ul></li><li>keine klinische Besserung nach 3 Tagen: Therapie überdenken</li></ul></li></ul></li><li>Infektionen des Gastrointestinaltrakts und intraabdominale Infektionen:<ul><li>durch bakterielle Erreger einschliesslich Shigella spp. ausser Shigella dysenteriae Typ 1 verursachte Diarrhö und empirische Therapie der schweren Reisediarrhö:<ul><li>500 mg 2mal / Tag</li><li>Gesamtbehandlungsdauer (evtl. einschliesslich einer anfänglichen parenteralen Behandlung mit Ciprofloxacin): 1 Tag</li></ul></li><li>durch Shigella dysenteriae Typ 1 verursachte Diarrhö:<ul><li>500 mg 2mal / Tag</li><li>Gesamtbehandlungsdauer (evtl. einschliesslich einer anfänglichen parenteralen Behandlung mit Ciprofloxacin): 5 Tage</li></ul></li><li>durch Vibrio cholerae verursachte Diarrhö:<ul><li>500 mg 2mal / Tag</li><li>Gesamtbehandlungsdauer (evtl. einschliesslich einer anfänglichen parenteralen Behandlung mit Ciprofloxacin): 3 Tage</li></ul></li><li>Typhus:<ul><li>500 mg 2mal / Tag</li><li>Gesamtbehandlungsdauer (evtl. einschliesslich einer anfänglichen parenteralen Behandlung mit Ciprofloxacin): 7 Tage</li></ul></li><li>durch Gram-negative Bakterien verursachte intraabdominale Infektionen:<ul><li>500 - 750 mg 2mal / Tag</li><li>Gesamtbehandlungsdauer (evtl. einschliesslich einer anfänglichen parenteralen Behandlung mit Ciprofloxacin): 5 - 14 Tage</li></ul></li></ul></li><li>Infektionen der Haut und des Weichteilgewebes:<ul><li>500 - 750 mg 2mal / Tag</li><li>Gesamtbehandlungsdauer (evtl. einschliesslich einer anfänglichen parenteralen Behandlung mit Ciprofloxacin): 7 - 14 Tage</li></ul></li><li>Infektionen der Knochen und Gelenke:<ul><li>500 - 750 mg 2mal / Tag</li><li>Gesamtbehandlungsdauer (evtl. einschliesslich einer anfänglichen parenteralen Behandlung mit Ciprofloxacin): höchstens 3 Monate</li></ul></li><li>Behandlung oder Prophylaxe von Infektionen bei neutropenischen Patienten:<ul><li>gemäss offiziellen Empfehlungen in Kombination mit geeigneten antibakteriellen Substanzen</li><li>500 - 750 mg 2mal / Tag</li><li>Gesamtbehandlungsdauer (evtl. einschliesslich einer anfänglichen parenteralen Behandlung mit Ciprofloxacin): Therapie über den gesamten Zeitraum der Neutropenie fortsetzen</li></ul></li><li>Prophylaxe invasiver Infektionen durch Neisseria meningitidis:<ul><li>500 mg als Einzeldosis</li></ul></li><li>Inhalation von Milzbranderregern - postexpositionelle Prophylaxe und Heilbehandlung fuer Personen, die in der Lage sind, oral behandelt zu werden, sofern klinisch erforderlich:<ul><li>500 mg 2mal / Tag</li><li>Therapiebeginn schnellstmöglich nach vermuteter oder bestätigter Exposition</li><li>Gesamtbehandlungsdauer (evtl. einschliesslich einer anfänglichen parenteralen Behandlung mit Ciprofloxacin): 60 Tage ab Bestätigung der Bacillus anthracis-Exposition</li></ul></li></ul></li><li>Kinder und Jugendliche:<ul><li>Zystische Fibrose:<ul><li>20 mg / kg KG 2mal / Tag</li><li>max. Einzeldosis: 750 mg</li><li>Gesamtbehandlungsdauer (evtl. einschliesslich einer anfänglichen parenteralen Behandlung mit Ciprofloxacin): 10 - 14 Tage</li><li>begrenzte Erfahrungen für Kinder 1- 5 Jahre</li></ul></li><li>Komplizierte Harnwegsinfektionen und Pyelonephritis:<ul><li>10 - 20 mg / kg KG 2mal / Tag</li><li>max. Einzeldosis: 750 mg</li><li>Gesamtbehandlungsdauer (evtl. einschliesslich einer anfänglichen parenteralen Behandlung mit Ciprofloxacin): 10 - 21 Tage</li></ul></li><li>Inhalation von Milzbranderregern - postexpositionelle Prophylaxe und Heilbehandlung fuer Personen, die in der Lage sind, oral behandelt zu werden, sofern klinisch erforderlich:<ul><li>10 - 15 mg / kg KG 2mal / Tag</li><li>Therapiebeginn schnellstmöglich nach vermuteter oder bestätigter Exposition</li><li>max. Einzeldosis: 500 mg</li><li>Gesamtbehandlungsdauer (evtl. einschliesslich einer anfänglichen parenteralen Behandlung mit Ciprofloxacin): 60 Tage ab Bestätigung der Bacillus anthracis-Exposition</li></ul></li><li>Andere schwere Infektionen:<ul><li>20 mg / kg KG 2mal / Tag</li><li>max. Einzeldosis: 750 mg</li><li>Gesamtbehandlungsdauer (evtl. einschliesslich einer anfänglichen parenteralen Behandlung mit Ciprofloxacin): entsprechend der Art der Infektionen</li></ul></li></ul></li></ul><p>Dosisanpassung</p><ul><li>Ältere Patienten:<ul><li>Dosisanpassung entsprechend der Schwere der Infektion und der Kreatinin-Clearance</li></ul></li><li>eingeschränkte Nierenfunktion:<ul><li>Erwachsene<ul><li>Kreatinin-Clearance 30 - 60 ml / Min /1,73m<sup>2</sup>; Serum-Kreatinin 124 - 168 µmol/l: 250 - 500 mg alle 12 Stunden</li><li>Kreatinin-Clearance &lt; 30 ml / Min / 1,73m<sup>2</sup>; Serum-Kreatinin &gt; 169 µmol / l: 250 - 500 mg alle 24 Stunden</li><li>Patienten unter Hämodialyse; Serum-Kreatinin &gt; 169 µmol / l: 250 - 500mg alle 24 Std. (nach Dialyse)</li><li>Patienten unter Peritonealdialyse; Serum-Kreatinin &gt; 169 µmol/l: 250 - 500mg alle 24 Std..</li></ul></li><li>Kinder: Dosierung für Kinder mit eingeschränkter Nierenfunktion nicht untersucht</li></ul></li></ul>"
+					}
+				}, {
+					"__metadata": {
+						"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(108782)",
+						"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(108782)",
+						"type": "arznei-mobil.Produkt_Text"
+					},
+					"Produkt": 376655,
+					"Schweregrad": "0",
+					"TextTyp": 22,
+					"Text_ID": 108782,
+					"ProduktDetails": {
+						"__deferred": {
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(108782)/ProduktDetails"
+						}
+					},
+					"TextTypDetails": {
+						"__metadata": {
+							"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(22)",
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(22)",
+							"type": "arznei-mobil.TextTyp"
+						},
+						"Bezeichnung": "Kontraindikation (absolut)",
+						"Id": 22,
+						"Produkt_TextDetails": {
+							"__deferred": {
+								"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(22)/Produkt_TextDetails"
+							}
+						}
+					},
+					"TexteDetails": {
+						"__metadata": {
+							"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Textes(108782)",
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Textes(108782)",
+							"type": "arznei-mobil.Texte"
+						},
+						"Id": 108782,
+						"Text_Data": "<h2 style=\"font-size:medium\">Kontraindikation (absolut), Wirkstoffprofil <br />(kumulative Wirkstoffangaben ohne Berücksichtigung des individuellen Zulassungsstatus)</h2><br /><ul><li>Überempfindlichkeit gegenüber Ciprofloxacin</li><li>Überempfindlichkeit gegenüber anderen Chinolonen</li><li>gleichzeitige Gabe von Ciprofloxacin und Tizanidin</li></ul><p> </p>"
+					}
+				}, {
+					"__metadata": {
+						"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(108785)",
+						"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(108785)",
+						"type": "arznei-mobil.Produkt_Text"
+					},
+					"Produkt": 376655,
+					"Schweregrad": "0",
+					"TextTyp": 25,
+					"Text_ID": 108785,
+					"ProduktDetails": {
+						"__deferred": {
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(108785)/ProduktDetails"
+						}
+					},
+					"TextTypDetails": {
+						"__metadata": {
+							"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(25)",
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(25)",
+							"type": "arznei-mobil.TextTyp"
+						},
+						"Bezeichnung": "Hinweise und Vorsichtsmaßnahmen",
+						"Id": 25,
+						"Produkt_TextDetails": {
+							"__deferred": {
+								"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(25)/Produkt_TextDetails"
+							}
+						}
+					},
+					"TexteDetails": {
+						"__metadata": {
+							"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Textes(108785)",
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Textes(108785)",
+							"type": "arznei-mobil.Texte"
+						},
+						"Id": 108785,
+						"Text_Data": "<h2 style=\"font-size:medium\">Hinweise und Vorsichtsmaßnahmen, Wirkstoffprofil <br />(kumulative Wirkstoffangaben ohne Berücksichtigung des individuellen Zulassungsstatus)</h2><br /><ul><li>schwere Infektionen und gemischte Infektionen mit Gram-positiven und anaeroben Erregern<ul><li>Ciprofloxacin mit anderen geeigneten antibakteriellen Substanzen kombinieren, da Monotherapie nicht geeignet</li></ul></li><li>Streptokokken-Infektion (einschließlich Streptococcus pneunomiae)<ul><li>Behandlung von Streptokokken-Infektionen mit Ciprofloxacin wird nicht empfohlen</li></ul></li><li>Infektionen des Genitaltraktes<ul><li>Gonorrhoische Urethritis, Zervizitis, Epididymoorchitis und entzündliche Erkrankungen des Beckens können durch Fluorchinolon-resistente Neisseria gonorrhoeae verursacht werden<ul><li>nur anwenden bei Gonorrhoischer Urethritis, -Zervizitis wenn Ciprofloxacin-resistente Neisseria gonorrhoeae ausgeschlossen werden können</li><li>bei Epididymoorchitis und entzündlichen Erkrankungen des Beckens Ciprofloxacin mit anderer geeigneter antibakterieller Substanz (z.B. Cephalosporin) kombinieren <ul><li>außer bei Ciprofloxacin-resistenten Neisseria gonorrhoeae </li></ul></li><li>falls keine klinische Besserung nach 3-tägiger Behandlung <ul><li>Therapie überdenken</li></ul></li></ul></li></ul></li><li>Harnwegsinfektionen<ul><li>die Fluorchinolon-Resistenz von Escherichia coli variiert innerhalb der Europäischen Union<ul><li>lokale Prävalenz der Fluorchinolon-Resistenz von Escherichia coli berücksichtigen</li></ul></li><li>zu erwarten, dass die Gabe einer Ciprofloxacin-Einzeldosis, die möglicherweise bei einer unkomplizierten Zystitis der Frau in der Prämenopause angewendet wird, weniger gut wirksam ist als die längere Behandlungsdauer<ul><li>dies ist insbesondere vor dem Hintergrund der steigenden Fluorchinolon-Resistenzrate von Escherichia coli zu beachten</li></ul></li></ul></li><li>Intraabdominale Infektion<ul><li>Behandlung von postoperativen intraabdominalen Infektionen<ul><li>begrenzte Daten zur Wirksamkeit </li></ul></li></ul></li><li>Reisediarrhoe<ul><li>Informationen zu Ciprofloxacin-Resistenzen für besuchte Länder mit relevanten Erregern berücksichtigen </li></ul></li><li>Infektionen der Knochen und Gelenke<ul><li>Ciprofloxacin in Kombination mit anderen antimikrobiellen Substanzen geben unter Berücksichtigung der mikrobiellen Untersuchungsergebnisse</li></ul></li><li>Inhalation von Milzbranderregern<ul><li>empfohlene Anwendung beim Menschen basiert auf <ul><li>in vitro Empfindlichkeitstestungen</li><li>tierexperimentellen Daten </li><li>limitierten humanen Daten</li></ul></li><li>Behandlung unter Berücksichtigung nationaler und /oder internationaler Leitlinien </li></ul></li><li>Kinder und Jugendliche<ul><li>offizielle Empfehlungen berücksichtigen</li><li>Ciprofloxacin-Behandlung sollte nur von Ärzten initiiert werden, die in der Behandlung von zystischer Fibrose und / oder schweren Infektionen bei Kindern und Jugendlichen erfahren sind</li><li>im Tierversuch wurden durch Ciprofloxacin Arthropathien an den gewichttragenden Gelenken von Jungtieren verursacht</li><li>klinische Studien<ul><li>randomisierte doppelblinde klinische Studie über die Gabe von Ciprofloxacin an Kindern <ul><li>Ciprofloxacin: n = 335</li><li>Durchschnittsalter = 6,3 Jahre</li><li>Kontrollgruppe: n = 349</li><li>Kontrollgruppe Durchschnittsalter = 6,2 Jahre</li><li>Altersspanne = 1 - 17 Jahre</li><li>bis zum Tag + 42 <ul><li>medikamenteninduzierte Arthropathie (gemäß klinischer Gelenkbefunde) mit einer Inzidenz von 7,2 % bzw. 4,6 %</li></ul></li><li>Nachuntersuchung nach 1 Jahr<ul><li>medikamenteninduzierte Arthropathie mit einer Inzidenz von 9,0 % bzw. 5,7 %</li></ul></li><li>Häufigkeitsanstieg der Arthropathie-Verdachtsfälle über die Zeit zwischen beiden Gruppen nicht statistisch signifikant</li></ul></li></ul></li><li>Anwendung von Ciprofloxacin nur nach sorgfältiger Nutzen-Risiko-Abwägung auf Grund möglicher unerwünschter Wirkungen auf Gelenke und / oder gelenknaher Gewebe</li><li>bronchopulmonale Infektionen bei zystischer Fibrose<ul><li>Studienteilnehmer: Kinder und Jugendliche im Alter &gt;/= 5 Jahre bis &lt;/= 17 Jahre </li><li>nur begrenzte Erfahrungen zur Behandlung von Kindern &gt;/= 1 und &lt; 5 Jahre</li></ul></li><li>komplizierte Harnwegs- und Nierenbeckeninfektionen<ul><li>Behandlung mit Ciprofloxacin in Betracht ziehen, wenn<ul><li>andere Behandlungen nicht in Frage kommen,</li><li>Ergebnisse auf mikrobiologischen Tests beruhen</li></ul></li><li>Studienteilnehmer: Kinder und Jugendliche im Alter von &gt;/=1 bis &lt;/= 17 Jahre</li></ul></li><li>andere spezifische schwere Infektionen<ul><li>gemäß offizieller Empfehlungen oder </li><li>nach sorgfältiger Nutzen-Risiko-Abwägung bei <ul><li>Nichtdurchführbarkeit anderer Therapien </li><li>Scheitern einer konventionellen Therapie </li><li>begründeter Anwendung von Ciprofloxacin basierend auf Ergebnissen mikrobiologischer Untersuchungen</li></ul></li><li>Einsatz von Ciprofloxacin bei spezifischen schweren Infektionen nicht untersucht, außer bei<ul><li>bronchopulmonalen Infektionen bei zystischer Fibrose</li><li>komplizierten Harnwegs- und Nierenbeckeninfektionen</li></ul></li><li>klinische Erfahrungen sind begrenzt</li><li>mit Vorsicht anwenden</li></ul></li></ul></li><li>Überempfindlichkeit<ul><li>Symptome<ul><li>Auftreten evtl. lebensbedrohlicher Überempfindlichkeits- und allergischer Reaktionen, einschließlich anaphylaktischer und anaphylaktoider Reaktionen (bereits nach einer Einzeldosis möglich)</li></ul></li><li>Maßnahmen<ul><li>Ciprofloxacin absetzen</li><li>adäquate ärztliche Behandlung einleiten</li></ul></li></ul></li><li>Skelettmuskulatur<ul><li>Patienten mit einer positiven Anamnese für Sehnenerkrankungen /-beschwerden, die mit einer Chinolonbehandlung assoziiert auftreten<ul><li>generell keine Anwendung von Ciprofloxacin </li><li>nach mikrobiologischer Abklärung des Erregers und sorgfältiger Nutzen-Risiko-Abwägung <ul><li>in sehr seltenen Fällen Behandlung dieser Patienten mit Ciprofloxacin bei bestimmten schweren Infektionen möglich<ul><li>nach Scheitern der Standardtherapie </li><li>bei Vorliegen einer bakteriellen Resistenz, bei der die mikrobiologischen Daten die Anwendung von Ciprofloxacin rechtfertigen</li></ul></li></ul></li></ul></li><li>unter Behandlung mit Ciprofloxacin bereits innerhalb der ersten 48 Stunden nach Behandlungsbeginn beidseitige Tendinitis und Sehnenruptur (insbes. Achillessehne) möglich</li><li>Risiko einer Tendinopathie erhöht bei<ul><li>älteren Patienten</li><li>Patienten, die gleichzeitig mit Kortikosteroiden behandelt werden</li></ul></li><li>bei jeglichem Anzeichen einer Tendinitis (z.B. schmerzhafte Schwellung, Entzündung)<ul><li>Behandlung mit Ciprofloxacin sofort absetzen</li><li>betroffene Extremität ruhigstellen</li></ul></li><li>Patienten mit Myasthenia gravis<ul><li>Ciprofloxacin mit Vorsicht anwenden, da Symptome verschlimmert werden können</li></ul></li></ul></li><li>Sehstörungen<ul><li>Augenarzt unverzüglich konsultieren, falls es zu Sehstörungen oder anderen Beeinträchtigung der Augen kommt</li></ul></li><li>Photosensibilisierung<ul><li>Ciprofloxacin führt nachgewiesenermaßen zu einer Photosensibilisierung</li><li>während Behandlung mit Ciprofloxacin<ul><li>ausgiebiges Sonnenlicht vermeiden</li><li>Bestrahlung mit UV-Licht vermeiden</li></ul></li></ul></li><li>Zentrales Nervensystem<ul><li>Krampfanfälle<ul><li>Chinolone können Krampanfälle auslösen bzw. die Krampfschwelle senken</li><li>Patienten mit Erkrankungen des Nervensystems, die für Krampfanfälle prädisponieren<ul><li>Ciprofloxacin mit Vorsicht anwenden</li></ul></li><li>Auftreten von Krampfanfällen<ul><li>Ciprofloxacin sofort absetzen</li></ul></li></ul></li><li>psychiatrische Reaktionen<ul><li>Auftreten psychiatrischer Reaktionen bereits nach Erstanwendung von Ciprofloxacin möglich</li><li>in seltenen Fällen können Depression oder Psychose zu selbstgefährdendem Verhalten voranschreiten<ul><li>Ciprofloxacin sofort absetzen</li></ul></li></ul></li><li>Polyneuropathie<ul><li>Fälle von Polyneuropathie berichtet, beruhend auf den beobachteten neurologischen Symptomen (allein oder in Kombination):<ul><li>Schmerz</li><li>Brennen</li><li>sensorische Störungen</li><li>Muskelschwäche</li></ul></li></ul></li><li>bei Patienten, die Neuropathiesymptome (inkl. Schmerz, Brennen, Kribbeln, Benommenheit und/oder Schwäche) entwickeln, Threapie abbrechen zur Vorbeugung irreversibler Schäden</li></ul></li><li>Herzerkrankungen<ul><li>Vorsicht bei Anwendung von Fluorchinolonen inkl. Ciprofloxacin bei Patienten mit bekannten Risikofaktoren für eine QT-Intervall-Verlängerung wie z.B.<ul><li>kongenitales Long-QT-Syndrom</li><li>gleichzeitige Anwendung von Arzneimitteln, von denen bekannt ist, dass sie das QT-Intervall verlängern z. B.<ul><li>Klasse-IA-Antiarrhythmika</li><li>Klasse-III-Antiarrhythmika</li><li>trizyklische Antidepressiva</li><li>Makrolide, Antipsychotika</li></ul></li><li>unkorrigiertes Elektrolytungleichgewicht z. B. <ul><li>Hypokaliämie</li><li>Hypomagnesiämie</li></ul></li><li>Herzerkrankungen z. B.<ul><li>Herzinsuffizienz</li><li>Myokardinfarkt</li><li>Bradykardie</li></ul></li></ul></li><li>ältere Patienten und Frauen reagieren möglicherweise empfindlicher auf QT-Zeit verlängernde Medikation<ul><li>Vorsicht geboten bei dieser Patientengruppe</li></ul></li></ul></li><li>Hypoglykämie<ul><li>Hypoglykämien am häufigsten bei Diabetikern, insbesondere bei älteren Patienten beobachtet</li><li>bei allen Patienten mit Diabetes wird eine sorgfältige Überwachung der Blutzuckerwerte empfohlen</li></ul></li><li>Gastrointestinaltrakt<ul><li>schwerer und anhaltender Durchfall während bis einschließlich einige Wochen nach der Behandlung kann ein Anzeichen für eine Antibiotika-assoziierte Colitis, evtl. lebensbedrohlich mit tödlichem Ausgang sein<ul><li>sofortige Behandlung erforderlich:<ul><li>Ciprofloxacin sofort absetzen</li><li>geeignete Therapie einleiten</li><li>peristaltikhemmende Mittel sind kontraindiziert</li></ul></li></ul></li></ul></li><li>Nieren und ableitende Harnwege<ul><li>Berichte über Kristallurie<ul><li>Patienten sollten ausreichend Flüssigkeit erhalten</li><li>ausgeprägte Alkalisierung des Harns vermeiden</li></ul></li></ul></li><li>Eingeschränkte Nierenfunktion<ul><li>Ciprofloxacin wird vorwiegend unverändert über die Nieren ausgeschieden<ul><li>bei Patienten mit eingeschränkter Nierenfunktion Dosis anpassen, um vermehrtes<br />Auftreten von Nebenwirkungen durch Kumulation von Ciprofloxacin zu vermeiden</li></ul></li></ul></li><li>Leber und Gallenwege<ul><li>Berichte über Fälle von Lebernekrosen und lebensbedrohlichem Leberversagen</li><li>beim Auftreten von Anzeichen und Symptomen einer Lebererkrankung Behandlung beenden, z.B. bei<ul><li>Appetitlosigkeit</li><li>Ikterus</li><li>dunkler Urin</li><li>Pruritus</li><li>schmerzempfindliches Abdomen</li></ul></li></ul></li><li>Glucose-6-Phosphathydrogenasemangel<ul><li>Berichte über hämolytische Reaktionen unter der Behandlung mit Ciprofloxacin bei Patienten mit Glucose-6-Phosphathydrogenasemangel</li><li>Anwendung von Ciprofloxacin vermeiden, sofern der potentielle Vorteil gegenüber dem möglichen Risiko nicht überwiegt</li><li>bei Anwendung Überwachung auf das potentielle Auftreten einer Hämolyse</li></ul></li><li>Resistenz<ul><li>während oder nach der Behandlung können Ciprofloxacin-resistente Erreger bei klinisch offensichtlicher Superinfektion und ohne Superinfektion isoliert werden</li><li>besonderes Risiko der Selektion Ciprofloxacin-resistenter Erreger<ul><li>während längerer Behandlungsdauer </li><li>bei nosokomialen Infektionen </li><li>bei Infektion durch Staphylococcus- und Pseudomonas-Erreger</li></ul></li></ul></li><li>Cytochrom P450<ul><li>Ciprofloxacin inhibiert CYP1A2</li><li>erhöhte Serumkonzentrationen von gleichzeitig angewendeten Substanzen, die ebenfalls über dieses System metabolisiert werden möglich, z.B. <ul><li>Theophyllin</li><li>Clozapin</li><li>Olanzapin</li><li>Ropinirol</li><li>Tizanidin</li><li>Duloxetin</li></ul></li><li>gemeinsame Anwendung von Ciprofloxacin und Tizanidin ist kontraindiziert</li><li>bei gleichzeitiger Einnahme <ul><li>engmaschig auf Überdosierung überwachen</li><li>Bestimmung der Serumkonzentrationen (z.B. Theophyllin) können erforderlich sein</li></ul></li></ul></li><li>Methotrexat<ul><li>gleichzeitige Gabe wird nicht empfohlen</li></ul></li><li>Beeinflussung von Laboruntersuchungen<ul><li>in vitro Aktivität von Ciprofloxacin gegen Mycobacterium tuberculosis:<ul><li>falsch-negative bakteriologische Ergebnisse</li></ul></li></ul></li></ul><p> </p>"
+					}
+				}, {
+					"__metadata": {
+						"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(177710)",
+						"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(177710)",
+						"type": "arznei-mobil.Produkt_Text"
+					},
+					"Produkt": 376655,
+					"Schweregrad": "0",
+					"TextTyp": 21,
+					"Text_ID": 177710,
+					"ProduktDetails": {
+						"__deferred": {
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(177710)/ProduktDetails"
+						}
+					},
+					"TextTypDetails": {
+						"__metadata": {
+							"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(21)",
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(21)",
+							"type": "arznei-mobil.TextTyp"
+						},
+						"Bezeichnung": "Indikation",
+						"Id": 21,
+						"Produkt_TextDetails": {
+							"__deferred": {
+								"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(21)/Produkt_TextDetails"
+							}
+						}
+					},
+					"TexteDetails": {
+						"__metadata": {
+							"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Textes(177710)",
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Textes(177710)",
+							"type": "arznei-mobil.Texte"
+						},
+						"Id": 177710,
+						"Text_Data": "<h2 style=\"font-size:medium\">Indikation</h2><br /><ul><li>Erwachsene:<ul><li>Untere Atemwegsinfektionen verursacht durch Gram-negative Bakterien:<ul><li>Exazerbationen der chronisch-obstruktiven Lungenerkrankung (COPD)</li><li>bronchopulmonale Infektionen bei zystischer Fibrose oder bei Bronchiektasen</li><li>Pneumonie</li></ul></li><li>Chronische eitrige Otitis media</li><li>Akute Verschlechterung der chronischen Sinusitis, insbesondere verursacht durch Gram-negative Bakterien</li><li>Harnwegsinfektionen</li><li>Gonokokken-Urethritis und -Zervizitis</li><li>Epididymo-orchitis, einschliesslich Fällen durch Neisseria gonorrhoeae</li><li>Entzündliche Erkrankungen des Beckens, einschliesslich Fällen durch Neisseria gonorrhoeae</li><li>Infektionen des Gastrointestinaltrakts (z.B. Reisediarrhö)</li><li>Intraabdominale Infektionen</li><li>Durch Gram-negative Bakterien verursachte Infektionen der Haut und des Weichteilgewebes</li><li>Maligne externe Otitis</li><li>Infektionen der Knochen und Gelenke</li><li>Behandlung von Infektionen bei neutropenischen Patienten</li><li>Prophylaxe von Infektionen bei neutropenischen Patienten</li><li>Prophylaxe invasiver Infektionen durch Neisseria meningitidis</li><li>Inhalation von Milzbranderregern (postexpositionelle Prophylaxe und Heilbehandlung)</li></ul></li><li>Kinder und Jugendliche:<ul><li>Durch Pseudomonas aeruginosa verursachte bronchopulmonale Infektionen bei zystischer Fibrose</li><li>Komplizierte Harnwegsinfektionen und Pyelonephritis</li><li>Inhalation von Milzbranderregern (postexpositionelle Prophylaxe und Heilbehandlung)</li><li>Behandlung von schweren Infektionen bei Kindern und Jugendlichen, wenn dies als notwendig angesehen wird</li></ul></li></ul>"
+					}
+				}, {
+					"__metadata": {
+						"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(108788)",
+						"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(108788)",
+						"type": "arznei-mobil.Produkt_Text"
+					},
+					"Produkt": 376655,
+					"Schweregrad": "2",
+					"TextTyp": 28,
+					"Text_ID": 108788,
+					"ProduktDetails": {
+						"__deferred": {
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(108788)/ProduktDetails"
+						}
+					},
+					"TextTypDetails": {
+						"__metadata": {
+							"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(28)",
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(28)",
+							"type": "arznei-mobil.TextTyp"
+						},
+						"Bezeichnung": "Schwangerschaftshinweise",
+						"Id": 28,
+						"Produkt_TextDetails": {
+							"__deferred": {
+								"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(28)/Produkt_TextDetails"
+							}
+						}
+					},
+					"TexteDetails": {
+						"__metadata": {
+							"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Textes(108788)",
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Textes(108788)",
+							"type": "arznei-mobil.Texte"
+						},
+						"Id": 108788,
+						"Text_Data": "<h2 style=\"font-size:medium\">Schwangerschaftshinweise</h2><br /><ul><li>Anwendung in der Schwangerschaft sollte als Vorsichtmaßnahme vermieden werden</li><li>bisher keine Hinweise auf Fehlbildungen oder fetale / neonatale Toxizität in verfügbaren Daten zur Anwendung bei schwangeren Frauen</li><li>Tierstudien<ul><li>keine direkt oder indirekt schädigende Wirkung in Hinsicht auf Reproduktionstoxizität</li><li>bei Jungtieren und ungeborenen Tieren unter Ciprofloxacinexposition <ul><li>Auswirkungen auf den unreifen Gelenkknorpel</li></ul></li></ul></li><li>kann nicht ausgeschlossen werden, dass Ciprofloxacin Schäden am Gelenkknorpel des kindlichen oder jugendlichen Organismus / Fötus verursacht</li></ul><p> </p>"
+					}
+				}, {
+					"__metadata": {
+						"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(177712)",
+						"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(177712)",
+						"type": "arznei-mobil.Produkt_Text"
+					},
+					"Produkt": 376655,
+					"Schweregrad": "0",
+					"TextTyp": 27,
+					"Text_ID": 177712,
+					"ProduktDetails": {
+						"__deferred": {
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(177712)/ProduktDetails"
+						}
+					},
+					"TextTypDetails": {
+						"__metadata": {
+							"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(27)",
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(27)",
+							"type": "arznei-mobil.TextTyp"
+						},
+						"Bezeichnung": "Art der Anwendung",
+						"Id": 27,
+						"Produkt_TextDetails": {
+							"__deferred": {
+								"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(27)/Produkt_TextDetails"
+							}
+						}
+					},
+					"TexteDetails": {
+						"__metadata": {
+							"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Textes(177712)",
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Textes(177712)",
+							"type": "arznei-mobil.Texte"
+						},
+						"Id": 177712,
+						"Text_Data": "<h2 style=\"font-size:medium\">Art der Anwendung</h2><br /><ul><li>unzerkaut mit Flüssigkeit einnehmen</li><li>Einnahme unabhängig von den Mahlzeiten</li><li>beschleunigte Aufnahme des Wirkstoffs bei Einnahme auf nüchternen Magen</li><li>verminderte Resorption von Ciprofloxacin bei gleichzeitiger Anwendung von eisen-, magnesium-, aluminium-, calcium- oder zinkhaltigen Präparaten, Sucralfat, Antacida, gepufferte Didanosin-haltige Virusstatika, orale Nährlösungen und grössere Mengen an Milchprodukten (Milch, Joghurt)<ul><li>Einnahme von Ciprofloxacin 1 bis 2 Stunden vor oder mindestens 4 Stunden nach Einnahme dieser Produkte</li></ul></li></ul>"
+					}
+				}, {
+					"__metadata": {
+						"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(108783)",
+						"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(108783)",
+						"type": "arznei-mobil.Produkt_Text"
+					},
+					"Produkt": 376655,
+					"Schweregrad": "0",
+					"TextTyp": 23,
+					"Text_ID": 108783,
+					"ProduktDetails": {
+						"__deferred": {
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(108783)/ProduktDetails"
+						}
+					},
+					"TextTypDetails": {
+						"__metadata": {
+							"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(23)",
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(23)",
+							"type": "arznei-mobil.TextTyp"
+						},
+						"Bezeichnung": "Nebenwirkungen",
+						"Id": 23,
+						"Produkt_TextDetails": {
+							"__deferred": {
+								"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(23)/Produkt_TextDetails"
+							}
+						}
+					},
+					"TexteDetails": {
+						"__metadata": {
+							"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Textes(108783)",
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Textes(108783)",
+							"type": "arznei-mobil.Texte"
+						},
+						"Id": 108783,
+						"Text_Data": "<h2 style=\"font-size:medium\">Nebenwirkungen, Wirkstoffprofil <br />(kumulative Wirkstoffangaben ohne Berücksichtigung des individuellen Zulassungsstatus)</h2><br /><ul><li>Infektionen und parasitäre Erkrankungen<ul><li>gelegentlich: größer bzw. gleich 1/1000 bis kleiner 1/100<ul><li>mykotische Superinfektionen</li></ul></li><li>selten: größer bzw. gleich 1/10000 bis kleiner 1/1000<ul><li>Antibiotika-assoziierte Colitis (sehr selten mit tödlichem Ausgang)</li></ul></li></ul></li><li>Erkrankungen des Blutes und des Lymphsystems<ul><li>gelegentlich: größer bzw. gleich 1/1000 bis kleiner 1/100<ul><li>Eosinophilie</li></ul></li><li>selten: größer bzw. gleich 1/10000 bis kleiner 1/1000<ul><li>Leukozytopenie </li><li>Anämie</li><li>Neutropenie</li><li>Leukozytose</li><li>Thrombozytopenie</li><li>Thrombozythämie (Thrombozytose)</li></ul></li><li>sehr selten: kleiner 1/10000 einschließlich Einzelfälle<ul><li>hämolytische Anämie</li><li>Agranulozytose</li><li>Panzytopenie (lebensbedrohlich)</li><li>Knochenmarksdepression (lebensbedrohlich)</li></ul></li></ul></li><li>Erkrankungen des Immunsystems<ul><li>selten: größer bzw. gleich 1/10000 bis kleiner 1/1000<ul><li>allergische Reaktion</li><li>allergisches Ödem</li><li>Angioödem</li></ul></li><li>sehr selten: kleiner 1/10000 einschließlich Einzelfälle<ul><li>anaphylaktische Reaktion </li><li>anaphylaktischer Schock (lebensbedrohlich)</li><li>serumkrankheitsähnliche Reaktion</li></ul></li></ul></li><li>Stoffwechsel- und Ernährungsstörungen<ul><li>gelegentlich: größer bzw. gleich 1/1000 bis kleiner 1/100<ul><li>Appetitlosigkeit</li><li>verminderter Appetit</li></ul></li><li>selten: größer bzw. gleich 1/10000 bis kleiner 1/1000<ul><li>Hyperglykämie</li><li>Hypoglykämie</li></ul></li></ul></li><li>Psychiatrische Erkrankungen<ul><li>gelegentlich: größer bzw. gleich 1/1000 bis kleiner 1/100<ul><li>psychomotorische Hyperaktivität</li><li>Agitiertheit</li></ul></li><li>selten: größer bzw. gleich 1/10000 bis kleiner 1/1000<ul><li>Verwirrtheit</li><li>Desorientiertheit</li><li>Angstzustände</li><li>Albträume</li><li>Depressionen (die möglicherweise zu Suizidgedanken/-überlegungen oder Suizidversuchen und vollendetem Suizid führen können)</li><li>Halluzinationen</li></ul></li><li>sehr selten: kleiner 1/10000 einschließlich Einzelfälle<ul><li>psychotische Reaktionen (die möglicherweise zu Suizidgedanken/-überlegungen oder Suizidversuchen und vollendetem Suizid führen können)</li></ul></li></ul></li><li>Erkrankungen des Nervensystems<ul><li>häufig: größer bzw. gleich 1/100 bis kleiner 1/10<ul><li>Müdigkeit</li></ul></li><li>gelegentlich: größer bzw. gleich 1/1000 bis kleiner 1/100<ul><li>Benommenheit</li><li>Kopfschmerzen</li><li>Schlafstörungen</li><li>Geschmacksstörungen</li></ul></li><li>selten: größer bzw. gleich 1/10000 bis kleiner 1/1000<ul><li>Parästhesie und Dysästhesie</li><li>Hypoästhesie</li><li>Zittern</li><li>Krampfanfälle (einschließlich Status epilepticus)</li><li>Schwindel</li></ul></li><li>sehr selten: kleiner 1/10000 einschließlich Einzelfälle<ul><li>Migräne</li><li>Koordinationsstörungen</li><li>Ataxie</li><li>Gangstörungen</li><li>Störungen des Geruchsnervs</li><li>intrakranieller Hochdruck und Pseudotumor cerebri</li><li>Albträume</li><li>Ruhelosigkeit</li></ul></li><li>ohne Häufigkeitsangabe<ul><li>periphere Neuropathie</li><li>Polyneuropathie</li></ul></li></ul></li><li>Augenerkrankungen<ul><li>selten: größer bzw. gleich 1/10000 bis kleiner 1/1000<ul><li>Sehstörungen (z.B. Diplopie)</li></ul></li><li>sehr selten: kleiner 1/10000 einschließlich Einzelfälle<ul><li>Störungen beim Farbensehen</li></ul></li></ul></li><li>Erkrankungen des Ohrs und des Labyrinths<ul><li>selten: größer bzw. gleich 1/10000 bis kleiner 1/1000<ul><li>Tinnitus</li><li>Hörverlust</li><li>beeinträchtigtes Hörvermögen</li></ul></li></ul></li><li>Herzerkrankungen<ul><li>gelegentlich: größer bzw. gleich 1/1000 bis kleiner 1/100<ul><li>Palpitationen</li></ul></li><li>selten: größer bzw. gleich 1/10000 bis kleiner 1/1000<ul><li>Tachykardie</li></ul></li><li>sehr selten: kleiner 1/10000 einschließlich Einzelfälle<ul><li>Hitzewallungen</li></ul></li><li>ohne Häufigkeitsangabe<ul><li>ventrikuläre Arrhythmie</li><li>Verlängerung des QT-Intervalls im EKG</li><li>Torsades de Pointes<ul><li>vorwiegend bei Patienten mit weiteren Risikofaktoren für eine QT-Verlängerung beobachtet</li></ul></li></ul></li></ul></li><li>Gefäßerkrankungen<ul><li>selten: größer bzw. gleich 1/10000 bis kleiner 1/1000<ul><li>Vasodilatation</li><li>Hypotonie</li><li>Synkope </li></ul></li><li>sehr selten: kleiner 1/10000 einschließlich Einzelfälle<ul><li>Vaskulitis</li></ul></li></ul></li><li>Erkrankungen der Atemwege, des Brustraums und Mediastinums<ul><li>gelegentlich: größer bzw. gleich 1/1000 bis kleiner 1/100<ul><li>Lungenembolie</li><li>Nasenbluten</li><li>Bluthusten</li><li>Schluckauf</li></ul></li><li>selten: größer bzw. gleich 1/10000 bis kleiner 1/1000<ul><li>Dyspnoe (einschließlich asthmatische Zustände)</li></ul></li></ul></li><li>Erkrankungen des Gastrointestinaltrakts<ul><li>häufig: größer bzw. gleich 1/100 bis kleiner 1/10<ul><li>Übelkeit</li><li>Diarrhoe</li></ul></li><li>gelegentlich: größer bzw. gleich 1/1000 bis kleiner 1/100<ul><li>Erbrechen</li><li>gastrointestinale Schmerzen und abdominale Schmerzen</li><li>Dyspepsie</li><li>Blähungen</li></ul></li><li>sehr selten: kleiner 1/10000 einschließlich Einzelfälle<ul><li>Pankreatitis</li></ul></li></ul></li><li>Leber- und Gallenerkrankungen<ul><li>gelegentlich: größer bzw. gleich 1/1000 bis kleiner 1/100<ul><li>Anstieg der Transaminasen</li><li>Bilirubinanstieg</li></ul></li><li>selten: größer bzw. gleich 1/10000 bis kleiner 1/1000<ul><li>Leberfunktionsstörung</li><li>Hepatitis</li><li>Gallestauung</li></ul></li><li>sehr selten: kleiner 1/10000 einschließlich Einzelfälle<ul><li>Lebernekrose (sehr selten voranschreitend bis zum lebensbedrohlichen Leberversagen)</li></ul></li></ul></li><li>Erkrankungen der Haut und des Unterhautzellgewebes<ul><li>gelegentlich: größer bzw. gleich 1/1000 bis kleiner 1/100<ul><li>Hautausschlag</li><li>Juckreiz</li><li>Urtikaria</li></ul></li><li>selten: größer bzw. gleich 1/10000 bis kleiner 1/1000<ul><li>Photosensibilisierung</li></ul></li><li>sehr selten: kleiner 1/10000 einschließlich Einzelfälle<ul><li>Petechien</li><li>Erythema multiforme</li><li>Erythema nodosum</li><li>Stevens-Johnson Syndrom (potentiell lebensbedrohlich)</li><li>toxisch epidermale Nekrolyse (potentiell lebensbedrohlich)</li></ul></li><li>ohne Häufigkeitsangabe<ul><li>Akute generalisierte exanthematische Pustulose (AEGP)</li></ul></li></ul></li><li>Skelettmuskulatur-, Bindegewebs- und Knochenerkrankungen<ul><li>gelegentlich: größer bzw. gleich 1/1000 bis kleiner 1/100<ul><li>Gelenkschmerzen</li><li>Gelenkschwellungen</li><li>Schmerzen der Skelettmuskulatur, z.B.<ul><li>Schmerzen der Extremitäten</li><li>Rückenschmerzen</li><li>Brustschmerzen</li></ul></li></ul></li><li>selten: größer bzw. gleich 1/10000 bis kleiner 1/1000<ul><li>Myalgie</li><li>Arthritis</li><li>gesteigerte Muskelspannung und Muskelkrämpfe</li></ul></li><li>sehr selten: kleiner 1/10000 einschließlich Einzelfälle<ul><li>Myasthenie</li><li>Tendinitis </li><li>Sehnenruptur (vorwiegend Achillessehne)</li><li>Verschlechterung der Symptome einer Myasthenia gravis</li></ul></li></ul></li><li>Erkrankungen der Nieren und Harnwege<ul><li>gelegentlich: größer bzw. gleich 1/1000 bis kleiner 1/100<ul><li>Nierenfunktionsstörungen</li></ul></li><li>selten: größer bzw. gleich 1/10000 bis kleiner 1/1000<ul><li>Nierenversagen</li><li>Hämaturie</li><li>Kristallurie</li><li>tubulointerstitielle Nephritis</li></ul></li></ul></li><li>Allgemeine Erkrankungen und Beschwerden am Verabreichungsort<ul><li>gelegentlich: größer bzw. gleich 1/1000 bis kleiner 1/100<ul><li>Fieber</li><li>Asthenie</li></ul></li><li>selten: größer bzw. gleich 1/10000 bis kleiner 1/1000<ul><li>Schwitzen (übermäßige Schweißbildung)</li><li>Ödeme</li></ul></li></ul></li><li>Untersuchungen<ul><li>gelegentlich: größer bzw. gleich 1/1000 bis kleiner 1/100<ul><li>Anstieg der alkalischen Phosphatase im Blut</li></ul></li><li>selten: größer bzw. gleich 1/10000 bis kleiner 1/1000<ul><li>abnormale Prothrombinwerte</li><li>Amylaseanstieg</li></ul></li><li>ohne Häufigkeitsangabe<ul><li>INR (International normalisierte Ratio) erhöht bei Patienten, die mit Vitamin-<br />K-Antagonisten behandelt werden</li></ul></li></ul></li></ul><p> </p>"
+					}
+				}, {
+					"__metadata": {
+						"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(108789)",
+						"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(108789)",
+						"type": "arznei-mobil.Produkt_Text"
+					},
+					"Produkt": 376655,
+					"Schweregrad": "3",
+					"TextTyp": 29,
+					"Text_ID": 108789,
+					"ProduktDetails": {
+						"__deferred": {
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(108789)/ProduktDetails"
+						}
+					},
+					"TextTypDetails": {
+						"__metadata": {
+							"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(29)",
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(29)",
+							"type": "arznei-mobil.TextTyp"
+						},
+						"Bezeichnung": "Stillzeithinweise",
+						"Id": 29,
+						"Produkt_TextDetails": {
+							"__deferred": {
+								"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(29)/Produkt_TextDetails"
+							}
+						}
+					},
+					"TexteDetails": {
+						"__metadata": {
+							"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Textes(108789)",
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Textes(108789)",
+							"type": "arznei-mobil.Texte"
+						},
+						"Id": 108789,
+						"Text_Data": "<h2 style=\"font-size:medium\">Stillzeithinweise</h2><br /><ul><li>sollte in der Stillzeit nicht eingenommen werden</li><li>Übergang in die Muttermilch</li><li>Risiko von Gelenkschäden beim gestillten Säugling</li></ul><p> </p>"
+					}
+				}, {
+					"__metadata": {
+						"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(4617)",
+						"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(4617)",
+						"type": "arznei-mobil.Produkt_Text"
+					},
+					"Produkt": 376655,
+					"Schweregrad": "2",
+					"TextTyp": 41,
+					"Text_ID": 4617,
+					"ProduktDetails": {
+						"__deferred": {
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(4617)/ProduktDetails"
+						}
+					},
+					"TextTypDetails": {
+						"__metadata": {
+							"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(41)",
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(41)",
+							"type": "arznei-mobil.TextTyp"
+						},
+						"Bezeichnung": "Hinweise / Warnhinweise für Reaktionsvermögen",
+						"Id": 41,
+						"Produkt_TextDetails": {
+							"__deferred": {
+								"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(41)/Produkt_TextDetails"
+							}
+						}
+					},
+					"TexteDetails": {
+						"__metadata": {
+							"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Textes(4617)",
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Textes(4617)",
+							"type": "arznei-mobil.Texte"
+						},
+						"Id": 4617,
+						"Text_Data": "Beeinträchtigung des Reaktionsvermögens durch Arzneistoff und/oder Nebenwirkung, Teilnahme am Straßenverkehr und Bedienen von Maschinen eingeschränkt möglich."
+					}
+				}, {
+					"__metadata": {
+						"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(120011)",
+						"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(120011)",
+						"type": "arznei-mobil.Produkt_Text"
+					},
+					"Produkt": 376655,
+					"Schweregrad": "0",
+					"TextTyp": 61,
+					"Text_ID": 120011,
+					"ProduktDetails": {
+						"__deferred": {
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(120011)/ProduktDetails"
+						}
+					},
+					"TextTypDetails": {
+						"__metadata": {
+							"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(61)",
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(61)",
+							"type": "arznei-mobil.TextTyp"
+						},
+						"Bezeichnung": "CGSW_Verkehrstüchtigkeit/Bedienung von Maschinen",
+						"Id": 61,
+						"Produkt_TextDetails": {
+							"__deferred": {
+								"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(61)/Produkt_TextDetails"
+							}
+						}
+					},
+					"TexteDetails": {
+						"__metadata": {
+							"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Textes(120011)",
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Textes(120011)",
+							"type": "arznei-mobil.Texte"
+						},
+						"Id": 120011,
+						"Text_Data": "<ul><li>auf Grund seiner neurologischen Wirkungen kann Ciprofloxacin das Reaktionsvermögen beeinflussen</li><li>Verkehrstüchtigkeit und Fähigkeit zum Bedienen von Maschinen kann beeinträchtigt werden</li></ul><p> </p>"
+					}
+				}, {
+					"__metadata": {
+						"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(4803)",
+						"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(4803)",
+						"type": "arznei-mobil.Produkt_Text"
+					},
+					"Produkt": 376655,
+					"Schweregrad": "0",
+					"TextTyp": 40,
+					"Text_ID": 4803,
+					"ProduktDetails": {
+						"__deferred": {
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(4803)/ProduktDetails"
+						}
+					},
+					"TextTypDetails": {
+						"__metadata": {
+							"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(40)",
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(40)",
+							"type": "arznei-mobil.TextTyp"
+						},
+						"Bezeichnung": "Hinweise / Warnhinweise für Anwendung und Dosierung",
+						"Id": 40,
+						"Produkt_TextDetails": {
+							"__deferred": {
+								"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(40)/Produkt_TextDetails"
+							}
+						}
+					},
+					"TexteDetails": {
+						"__metadata": {
+							"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Textes(4803)",
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Textes(4803)",
+							"type": "arznei-mobil.Texte"
+						},
+						"Id": 4803,
+						"Text_Data": "<h2 style=\"font-size:medium\">Hinweise / Warnhinweise für Anwendung und Dosierung</h2><br />Mit Flüssigkeit einnehmen."
+					}
+				}]
+			},
+			"Produkt_WirkstoffDetails": {
+				"__deferred": {
+					"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkts(376655)/Produkt_WirkstoffDetails"
+				}
+			}
+		}
+	}
+}

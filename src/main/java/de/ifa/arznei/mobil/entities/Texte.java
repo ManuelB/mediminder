@@ -19,7 +19,8 @@ public class Texte implements Serializable {
 	@Column(name="_id")
 	private int id;
 
-	@Column(name="Text_Data")
+	/* The metadata constraints '[Nullable=true, MaxLength=255]' do not allow to format the value ... */
+	@Column(name="Text_Data", length=65536)
 	private String text_Data;
 
 	public Texte() {
