@@ -1,0 +1,502 @@
+{
+	"type": "DELETE_MEDICINE",
+	"medicine": {
+		"article": {
+			"__metadata": {
+				"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Artikels(78597)",
+				"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Artikels(78597)",
+				"type": "arznei-mobil.Artikel"
+			},
+			"Aenderungsdatum": "01.07.2016",
+			"Avp": "5.65",
+			"Hinweise": "",
+			"Id": 78597,
+			"Menge": "20 ST",
+			"Neuerscheinung": 0,
+			"Norm": "",
+			"Produkt": 373704,
+			"Pvgl": 11145173,
+			"Sortiment_Diaetetika": "0",
+			"Sortiment_Diagnostika": "0",
+			"Sortiment_Enterale_Ernaehrung": "0",
+			"Sortiment_Hilfsmittel": "0",
+			"Sortiment_Homoeopathika": "0",
+			"Sortiment_IFAP": "1",
+			"Sortiment_KlinikArznei": "1",
+			"Sortiment_Schwangerschaftstest": "0",
+			"Sortiment_Teststreifen": "0",
+			"Sortiment_Tierarzneimittel": 0,
+			"Sortiment_Verbandmittel": "0",
+			"Teilbarkeit": "4",
+			"Zuzahlung": "5.65",
+			"ProduktDetails": {
+				"__metadata": {
+					"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkts(373704)",
+					"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkts(373704)",
+					"type": "arznei-mobil.Produkt"
+				},
+				"Atc": "N02BA01",
+				"Bezeichnung": "Aspirin 0.5",
+				"Darreichung": "TAB",
+				"Id": 373704,
+				"Online": 0,
+				"Zusammensetzung_String": "Acetylsalicylsäure 500mg",
+				"ArtikelDetails": {
+					"__deferred": {
+						"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkts(373704)/ArtikelDetails"
+					}
+				},
+				"AtcDetails": {
+					"__deferred": {
+						"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkts(373704)/AtcDetails"
+					}
+				},
+				"DarreichungDetails": {
+					"__deferred": {
+						"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkts(373704)/DarreichungDetails"
+					}
+				},
+				"Produkt_InteraktionDetails": {
+					"__deferred": {
+						"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkts(373704)/Produkt_InteraktionDetails"
+					}
+				},
+				"Produkt_TextDetails": {
+					"results": [{
+						"__metadata": {
+							"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(765443)",
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(765443)",
+							"type": "arznei-mobil.Produkt_Text"
+						},
+						"Produkt": 373704,
+						"Schweregrad": "0",
+						"TextTyp": 21,
+						"Text_ID": 765443,
+						"ProduktDetails": {
+							"__deferred": {
+								"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(765443)/ProduktDetails"
+							}
+						},
+						"TextTypDetails": {
+							"__metadata": {
+								"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(21)",
+								"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(21)",
+								"type": "arznei-mobil.TextTyp"
+							},
+							"Bezeichnung": "Indikation",
+							"Id": 21,
+							"Produkt_TextDetails": {
+								"__deferred": {
+									"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(21)/Produkt_TextDetails"
+								}
+							}
+						},
+						"TexteDetails": {
+							"__metadata": {
+								"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Textes(765443)",
+								"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Textes(765443)",
+								"type": "arznei-mobil.Texte"
+							},
+							"Id": 765443,
+							"Text_Data": "<h2 style=\"font-size:medium\">Indikation</h2><br /><ul><li>symptomatische Behandlung bei leichten bis mäßig starken Schmerzen und/oder Fieber</li></ul>"
+						}
+					}, {
+						"__metadata": {
+							"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(765444)",
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(765444)",
+							"type": "arznei-mobil.Produkt_Text"
+						},
+						"Produkt": 373704,
+						"Schweregrad": "0",
+						"TextTyp": 24,
+						"Text_ID": 765444,
+						"ProduktDetails": {
+							"__deferred": {
+								"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(765444)/ProduktDetails"
+							}
+						},
+						"TextTypDetails": {
+							"__metadata": {
+								"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(24)",
+								"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(24)",
+								"type": "arznei-mobil.TextTyp"
+							},
+							"Bezeichnung": "Dosierung",
+							"Id": 24,
+							"Produkt_TextDetails": {
+								"__deferred": {
+									"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(24)/Produkt_TextDetails"
+								}
+							}
+						},
+						"TexteDetails": {
+							"__metadata": {
+								"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Textes(765444)",
+								"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Textes(765444)",
+								"type": "arznei-mobil.Texte"
+							},
+							"Id": 765444,
+							"Text_Data": "<h2 style=\"font-size:medium\">Dosierung</h2><br /><ul><li>leichte bis mäßig starke Schmerzen und/oder Fieber<ul><li>Erwachsene und Jugendliche &gt;/= 16 Jahre<ul><li>1 - 2 Tabletten (500 - 1000 mg Acetylsalicylsäure), bei Bedarf alle 4 Stunden wiederholen</li><li>max. Dosis: 6 Tabletten (3500 mg Acetylsalicylsäure) / Tag </li></ul></li><li>ältere Patienten &gt;/= 65 Jahre<ul><li>1 Tablette (500 mg), bei Bedarf alle 4 Stunden wiederholen</li><li>max. Dosis: 4 Tabletten (2000 mg) / Tag</li></ul></li><li>Jugendliche von 12 - 15 Jahren (40 - 50 kg Körpergewicht):<ul><li>1 Tablette (500 mg), bei Bedarf alle 4 Stunden wiederholen</li><li>max. Dosis: 6 Tabletten (3500 mg) / Tag</li></ul></li><li>Anwendungsdauer<ul><li>ohne ärztlichen Rat nicht länger als 3 Tage (gegen Fieber) bzw. 3 - 4 Tage (gegen Schmerzen) </li></ul></li></ul></li></ul><p>Dosisanpassung</p><ul><li>Kinder und Jugendliche &lt; 12 Jahre, &lt; 40 kg KG<ul><li>nur auf ärztliche Anordnung</li><li>60 mg / kg / Tag, in 4 - 6 Einzeldosen aufgeteilt, d.h:<ul><li>15 mg / kg / 6 Stunden oder</li><li>10 mg / kg / 4 Stunden</li></ul></li></ul></li><li>Patienten mit eingeschränkter Leber- oder Nierenfunktion oder mit Kreislaufproblemen<ul><li>Anwendung mit Vorsicht</li></ul></li><li>schwere Nieren- oder Leberinsuffizienz<ul><li>Anwendung kontraindiziert</li></ul></li></ul>"
+						}
+					}, {
+						"__metadata": {
+							"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(112897)",
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(112897)",
+							"type": "arznei-mobil.Produkt_Text"
+						},
+						"Produkt": 373704,
+						"Schweregrad": "3",
+						"TextTyp": 28,
+						"Text_ID": 112897,
+						"ProduktDetails": {
+							"__deferred": {
+								"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(112897)/ProduktDetails"
+							}
+						},
+						"TextTypDetails": {
+							"__metadata": {
+								"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(28)",
+								"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(28)",
+								"type": "arznei-mobil.TextTyp"
+							},
+							"Bezeichnung": "Schwangerschaftshinweise",
+							"Id": 28,
+							"Produkt_TextDetails": {
+								"__deferred": {
+									"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(28)/Produkt_TextDetails"
+								}
+							}
+						},
+						"TexteDetails": {
+							"__metadata": {
+								"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Textes(112897)",
+								"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Textes(112897)",
+								"type": "arznei-mobil.Texte"
+							},
+							"Id": 112897,
+							"Text_Data": "<h2 style=\"font-size:medium\">Schwangerschaftshinweise</h2><br /><ul><li>während des 1. und 2. Trimenons darf bzw. sollte Acetylsalicylsäure nicht gegeben werden, außer dies ist eindeutig notwendig<ul><li>Dosis so niedrig und Dauer der Anwendung so kurz wie möglich</li></ul></li><li>im 3. Trimenon kontraindiziert <ul><li>während des 3. Schwangerschaftstrimesters können alle Prostaglandinsynthesehemmer<ul><li>den Fetus folgenden Risiken aussetzen<ul><li>kardiopulmonale Toxizität (mit vorzeitigem Verschluss des Ductus arteriosus und pulmonaler Hypertonie)</li><li>Nierenfunktionsstörung, die zu Nierenversagen mit Oligohydramniose fortschreiten kann</li></ul></li><li>die Mutter und das Kind, am Ende der Schwangerschaft, folgenden Risiken aussetzen<ul><li>mögliche Verlängerung der Blutungszeit, ein thrombozytenaggregationshemmender Effekt, der selbst bei sehr geringen Dosen auftreten kann</li><li>Hemmung von Uteruskontraktionen, mit der Folge eines verspäteten oder verlängerten Geburtsvorganges</li></ul></li></ul></li></ul></li><li>Frauen mit Kinderwunsch<ul><li>Dosis so niedrig und Anwendungsdauer so kurz wie möglich</li></ul></li><li>eine Hemmung der Prostaglandinsynthese kann die Schwangerschaft und/oder die embryo-fetale Entwicklung negativ beeinflussen</li><li>Daten aus epidemiologischen Studien weisen auf ein erhöhtes Risiko für Fehlgeburten sowie kardiale Missbildungen und Gastroschisis nach der Anwendung eines Prostaglandin-synthesehemmers in der Frühschwangerschaft hin<ul><li>absolute Risiko kardiovaskulärer Fehlbildungen stieg von unter 1 % auf ca. 1,5 %</li><li>Risiko steigt mit der Dosis und Dauer der Therapie</li></ul></li><li>bei Tieren wurde nachgewiesen, dass die Gabe eines Prostaglandinsynthese-hemmers zu erhöhtem prä- und post-implantärem Verlust und zu embryo-fetaler Letalität führt</li><li>erhöhte lnzidenzen verschiedener Missbildungen, einschließlich kardiovaskulärer Missbildungen, bei Tiere, die während der Phase der Organogenese einen Prostaglandinsynthesehemmer erhielten</li><li>Fertilität<ul><li>es existiert eine gewisse Evidenz dafür, dass Arzneistoffe, die die Cyclooxygenase/-Prostaglandinsynthese hemmen, die weibliche Fertilität über eine Wirkung auf die Ovulation beeinträchtigen können<ul><li>nach Absetzen der Behandlung reversibel</li></ul></li></ul></li></ul>"
+						}
+					}, {
+						"__metadata": {
+							"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(112892)",
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(112892)",
+							"type": "arznei-mobil.Produkt_Text"
+						},
+						"Produkt": 373704,
+						"Schweregrad": "0",
+						"TextTyp": 23,
+						"Text_ID": 112892,
+						"ProduktDetails": {
+							"__deferred": {
+								"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(112892)/ProduktDetails"
+							}
+						},
+						"TextTypDetails": {
+							"__metadata": {
+								"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(23)",
+								"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(23)",
+								"type": "arznei-mobil.TextTyp"
+							},
+							"Bezeichnung": "Nebenwirkungen",
+							"Id": 23,
+							"Produkt_TextDetails": {
+								"__deferred": {
+									"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(23)/Produkt_TextDetails"
+								}
+							}
+						},
+						"TexteDetails": {
+							"__metadata": {
+								"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Textes(112892)",
+								"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Textes(112892)",
+								"type": "arznei-mobil.Texte"
+							},
+							"Id": 112892,
+							"Text_Data": "<h2 style=\"font-size:medium\">Nebenwirkungen, Wirkstoffprofil <br />(kumulative Wirkstoffangaben ohne Berücksichtigung des individuellen Zulassungsstatus)</h2><br /><ul><li>Erkrankungen des Gastrointestinaltrakts<ul><li>häufig: größer bzw. gleich 1/100 bis kleiner 1/10<ul><li>Magen-Darm-Beschwerden wie <ul><li>Sodbrennen</li><li>Übelkeit</li><li>Erbrechen</li><li>Bauchschmerzen</li><li>Durchfall</li></ul></li><li>geringfügige Blutverluste aus dem Magen- Darm- Bereich (Mikroblutungen)</li><li>Erytheme und Erosionen im oberen Gastrointestinaltrakt</li></ul></li><li>gelegentlich: größer bzw. gleich 1/1000 bis kleiner 1/100<ul><li>Ulzera und Blutungen im oberen Gastrointestinaltrakt mit Begleitsymptomatik<ul><li>wie Erbrechen von Blut (Hämatemesis) und Teerstuhl (Meläna)</li></ul></li></ul></li><li>selten: größer bzw. gleich 1/10000 bis kleiner 1/1000<ul><li>Magen- Darmblutungen<ul><li>die sehr selten zu einer Eisenmangelanämie führen können</li></ul></li><li>Magen- Darmgeschwüre<ul><li>insbesondere bei älteren Patienten, <ul><li>unter Umständen mit Blutung und Perforation</li></ul></li></ul></li><li>gastrointenstinale Entzündungen</li><li>schwere Blutungen im oberen Gastrointestinaltrakt</li><li>nach längerer Anwendung von Acetylsalicylsäure kann eine Blutarmut durch verborgene Magen- Darm-Blutverluste auftreten</li></ul></li><li>sehr selten: kleiner 1/10000, einschließlich Einzelfälle<ul><li>Stomatitis und Ösophagitis</li><li>toxische Wirkungen am unteren Gastrointestinaltrakt mit Ulzeration</li><li>Strikturen</li><li>Kolitis</li><li>Verschärfung bestehender Darmentzündungen</li></ul></li></ul></li><li>Erkrankungen des Nervensystems<ul><li>häufig: größer bzw. gleich 1/100 bis kleiner 1/10<ul><li>Kopfschmerzen</li><li>Schlaflosigkeit</li></ul></li><li>gelegentlich: größer bzw. gleich 1/1000 bis kleiner 1/100<ul><li>mögliche Anzeichen einer Überdosierung<ul><li>Schwindel</li><li>Benommenheit</li><li>mentale Verwirrung </li></ul></li></ul></li><li>selten: größer bzw. gleich 1/10000 bis kleiner 1/1000<ul><li>intrazerebrale Blutung</li></ul></li><li>ohne Häufigkeitsangabe<ul><li>mögliche Anzeichen einer Überdosierung<ul><li>gestörtes Hörvermögen</li><li>Ohrensausen (Tinnitus)</li><li>Sehstörungen</li></ul></li></ul></li></ul></li><li>Erkrankungen des Blutes und des Lymphsystems<ul><li>häufig: größer bzw. gleich 1/100 bis kleiner 1/10<ul><li>verlängerte Blutungszeiten</li><li>Hemmung der Thrombozytenaggregation</li></ul></li><li>gelegentlich: größer bzw. gleich 1/1000 bis kleiner 1/100<ul><li>verborgene gastrointestinale Blutungen</li></ul></li><li>selten: größer bzw. gleich 1/10000 bis kleiner 1/1000<ul><li>Anämie bei Langzeittherapie</li><li>Hämolyse bei Patienten mit einem Glucose- 6-Phosphatdehydrogenase-Mangel (G6PD)</li><li>schwerwiegende Blutungen<ul><li>cerebrale Blutungen,möglicherweise lebensbedrohlich <ul><li> bei Patienten mit nicht eingestelltem Bluthochruck</li><li>gleichzeitige Behandlung mit Antikoagulantien</li></ul></li></ul></li></ul></li><li>sehr selten: kleiner 1/10000, einschließlich Einzelfälle<ul><li>Blutgerinnungsstörungen (Hypoprothrombinämie) bei hoher Dosierung</li><li>Thrombozytopenie</li><li>Neutropenie</li><li>Eosinophilie</li><li>Agranulozytose und aplastische Anämie</li></ul></li><li>ohne Häufigkeitsangabe<ul><li>Blutungen wie<ul><li>Nasenbluten</li><li>Zahnfleischbluten</li><li>Hautblutungen</li><li>Blutungen des Urogenitaltraktes</li></ul></li><li>Eisenmangelanämie bei länger andauernder oder chronischer Anwendung</li></ul></li></ul></li><li>Leber- und Gallenerkrankungen<ul><li>selten: größer bzw. gleich 1/10000 bis kleiner 1/1000<ul><li>erhöhte Transaminasewerte im Blut</li><li>Reye-Syndrom</li></ul></li><li>sehr selten: kleiner 1/10000, einschließlich Einzelfälle<ul><li>leichte, reversible und dosisabhängige toxische Begleithepatitis<ul><li>besonders während bestimmter viraler Erkrankungen (Influenza A, Influenza B, Varizellen)</li></ul></li><li>erhöhte Leberwerte</li><li>Leberfunktionsstörungen</li></ul></li></ul></li><li>Stoffwechsel- und Ernährungsstörungen <ul><li>selten: größer bzw. gleich 1/10000 bis kleiner 1/1000<ul><li>Hypoglykämie</li></ul></li><li>ohne Häufigkeitsangabe<ul><li>Gichtanfall</li></ul></li></ul></li><li>Erkrankungen des Gehörorgans<ul><li>gelegentlich: größer bzw. gleich 1/1000 bis kleiner 1/100<ul><li>als mögliches Zeichen einer Überdosierung<ul><li>gestörtes Hörvermögen</li></ul></li></ul></li><li>selten: größer bzw. gleich 1/10000 bis kleiner 1/1000<ul><li>dosisabhängiger reversibler Gehörverlust und Taubheit bereits bei einer niedrigen Plasma-Salicylat-Konzentration</li></ul></li></ul></li><li>Erkrankungen des Immunsystems<ul><li>gelegentlich: größer bzw. gleich 1/1000 bis kleiner 1/100<ul><li>Überempfindlichkeitsreaktionen wie z.B. Hautreaktionen</li></ul></li><li>selten: größer bzw. gleich 1/10000 bis kleiner 1/1000<ul><li>Überempfindlichkeitsreaktionen <ul><li>schwere Hautreaktionen (bis hin zu Erythema exsudativum multiforme)</li><li>des Respirationstrakts</li><li>des Gastrointestinaltraks</li><li>des kardiovaskulären Systems</li><li>vor allem bei Asthmatikern</li><li>Symptome<ul><li>Blutdruckabfall</li><li>Anfälle von Atemnot</li><li>Rhinitis</li><li>verstopfte Nase</li><li>anapylaktischer Schock</li><li>Quincke- Ödeme</li></ul></li></ul></li></ul></li><li>ohne Häufigkeitsangabe<ul><li>Asthma</li><li>Angioödem</li></ul></li></ul></li><li>Erkrankungen der Nieren und Harnwege<ul><li>sehr selten: kleiner 1/10000, einschließlich Einzelfälle<ul><li>Nierenfunktionsstörungen</li></ul></li><li>ohne Häufigkeitsangabe<ul><li>aktues Nierenversagen</li><li>Wasser- und Natriumtretention (Ödeme) bei hohen Dosen</li></ul></li></ul></li><li>Erkrankungen der Haut und des Unterhautzellgewebes<ul><li>gelegentlich: größer bzw. gleich 1/1000 bis kleiner 1/100<ul><li>allergische Reaktionen wie Urtikaria oder Angioödeme bei Allergikern</li></ul></li><li>sehr selten: kleiner 1/10000, einschließlich Einzelfälle<ul><li>Hautreaktionen wie Hautausschlag mit Rötung und Blasenbildung ( Stevens- Johnson-Syndrom, Lyell-Syndrom)</li><li>kleinfleckige Kapillarblutungen in der Haut (Purpura, hämorrhagische Vasculitis)</li></ul></li></ul></li><li>Erkrankungen der Atemwege<ul><li>häufig: größer bzw. gleich 1/100 bis kleiner 1/10<ul><li>Bronchospasmen bei Asthma-Patienten</li></ul></li></ul></li><li>Sonstige Nebenwirkungen<ul><li>ohne Häufigkeitsangabe<ul><li>Verschlechterung infektionsbedingter Entzündungen (z. B. Entwicklung einer nekrotisierenden Fasciitis)</li></ul></li></ul></li></ul><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p>"
+						}
+					}, {
+						"__metadata": {
+							"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(765445)",
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(765445)",
+							"type": "arznei-mobil.Produkt_Text"
+						},
+						"Produkt": 373704,
+						"Schweregrad": "0",
+						"TextTyp": 27,
+						"Text_ID": 765445,
+						"ProduktDetails": {
+							"__deferred": {
+								"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(765445)/ProduktDetails"
+							}
+						},
+						"TextTypDetails": {
+							"__metadata": {
+								"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(27)",
+								"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(27)",
+								"type": "arznei-mobil.TextTyp"
+							},
+							"Bezeichnung": "Art der Anwendung",
+							"Id": 27,
+							"Produkt_TextDetails": {
+								"__deferred": {
+									"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(27)/Produkt_TextDetails"
+								}
+							}
+						},
+						"TexteDetails": {
+							"__metadata": {
+								"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Textes(765445)",
+								"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Textes(765445)",
+								"type": "arznei-mobil.Texte"
+							},
+							"Id": 765445,
+							"Text_Data": "<h2 style=\"font-size:medium\">Art der Anwendung</h2><br /><ul><li>Einnahme der Tabletten mit reichlich Flüssigkeit</li></ul>"
+						}
+					}, {
+						"__metadata": {
+							"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(112891)",
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(112891)",
+							"type": "arznei-mobil.Produkt_Text"
+						},
+						"Produkt": 373704,
+						"Schweregrad": "0",
+						"TextTyp": 22,
+						"Text_ID": 112891,
+						"ProduktDetails": {
+							"__deferred": {
+								"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(112891)/ProduktDetails"
+							}
+						},
+						"TextTypDetails": {
+							"__metadata": {
+								"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(22)",
+								"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(22)",
+								"type": "arznei-mobil.TextTyp"
+							},
+							"Bezeichnung": "Kontraindikation (absolut)",
+							"Id": 22,
+							"Produkt_TextDetails": {
+								"__deferred": {
+									"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(22)/Produkt_TextDetails"
+								}
+							}
+						},
+						"TexteDetails": {
+							"__metadata": {
+								"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Textes(112891)",
+								"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Textes(112891)",
+								"type": "arznei-mobil.Texte"
+							},
+							"Id": 112891,
+							"Text_Data": "<h2 style=\"font-size:medium\">Kontraindikation (absolut), Wirkstoffprofil <br />(kumulative Wirkstoffangaben ohne Berücksichtigung des individuellen Zulassungsstatus)</h2><br /><ul><li>Überempfindlichkeit gegen Acetylsalicylsäure oder andere Salicylate</li><li>Asthmaanfälle oder andere allergische Reaktionen in der Vergangenheit gegen Salicylate oder Substanzen mit ähnlicher Wirkung insb. nichtsteroidale Entzündungshemmer (NSAR)</li><li>krankhaft erhöhter Blutungsneigung (Thrombozytopenie, Vitamin-K- Mangel, Hämophilie)</li><li>Leber- und Nierenversagen (GFR &lt; 10 ml/min) bzw. schwere Leber-/ Niereninsuffizienz</li><li>schwere Herzinsuffizienz</li><li>Kombination mit Methotrexat (15 mg oder mehr / Woche)</li><li>Schwangerschaft (ab dem 6 Monat : &gt; 24 Wochen nach letzter Monatsblutung / 3. Trimenon)</li><li>hämorragische Diathese </li><li>akute gastrointestinale Ulcera</li><li>gastrointestinale Blutungen oder Perforationen (Magen- oder Darmdurchbruch) in der Vorgeschichte, die durch eine vorherige Therapie mit NSAR bedingt waren</li><li>aktive oder in der Vorgeschichte bekannte Magen- und Zwölffingerdarmgeschwüren/ Hämorrhagien mit mindestens 2 unverkennbaren Episoden von erwiesener Ulzeration oder Blutungen</li><li>gleichzeitige Behandlung mit oralen Antikoagulanzien; dies gilt für Acetylsalicylsäure in antiinflammatorischer sowie in analgetischer bzw. antipyretischer Dosierung und für Patienten mit Gastroduodenalulkus in der Anamnese<br /></li></ul>"
+						}
+					}, {
+						"__metadata": {
+							"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(112898)",
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(112898)",
+							"type": "arznei-mobil.Produkt_Text"
+						},
+						"Produkt": 373704,
+						"Schweregrad": "2",
+						"TextTyp": 29,
+						"Text_ID": 112898,
+						"ProduktDetails": {
+							"__deferred": {
+								"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(112898)/ProduktDetails"
+							}
+						},
+						"TextTypDetails": {
+							"__metadata": {
+								"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(29)",
+								"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(29)",
+								"type": "arznei-mobil.TextTyp"
+							},
+							"Bezeichnung": "Stillzeithinweise",
+							"Id": 29,
+							"Produkt_TextDetails": {
+								"__deferred": {
+									"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(29)/Produkt_TextDetails"
+								}
+							}
+						},
+						"TexteDetails": {
+							"__metadata": {
+								"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Textes(112898)",
+								"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Textes(112898)",
+								"type": "arznei-mobil.Texte"
+							},
+							"Id": 112898,
+							"Text_Data": "<h2 style=\"font-size:medium\">Stillzeithinweise</h2><br /><ul><li>Übergang von Acetylsalicylsäure und dessen Abbauproduktein geringen Mengen in die Muttermilch</li><li>bisher keine Hinweise auf unerwünschte Wirkung beim Säugling</li><li>bei gelegentlicher Anwendung mit empfohlener Menge<ul><li>Unterbrechung des Stillens nicht erforderlich</li></ul></li><li>längere Anwendung bzw. Gabe höherer Dosen<ul><li>Abstillen</li></ul></li></ul>"
+						}
+					}, {
+						"__metadata": {
+							"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(4625)",
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(4625)",
+							"type": "arznei-mobil.Produkt_Text"
+						},
+						"Produkt": 373704,
+						"Schweregrad": "0",
+						"TextTyp": 40,
+						"Text_ID": 4625,
+						"ProduktDetails": {
+							"__deferred": {
+								"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(4625)/ProduktDetails"
+							}
+						},
+						"TextTypDetails": {
+							"__metadata": {
+								"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(40)",
+								"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(40)",
+								"type": "arznei-mobil.TextTyp"
+							},
+							"Bezeichnung": "Hinweise / Warnhinweise für Anwendung und Dosierung",
+							"Id": 40,
+							"Produkt_TextDetails": {
+								"__deferred": {
+									"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(40)/Produkt_TextDetails"
+								}
+							}
+						},
+						"TexteDetails": {
+							"__metadata": {
+								"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Textes(4625)",
+								"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Textes(4625)",
+								"type": "arznei-mobil.Texte"
+							},
+							"Id": 4625,
+							"Text_Data": "<h2 style=\"font-size:medium\">Hinweise / Warnhinweise für Anwendung und Dosierung</h2><br />Einnahme nach dem Essen."
+						}
+					}, {
+						"__metadata": {
+							"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(112894)",
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(112894)",
+							"type": "arznei-mobil.Produkt_Text"
+						},
+						"Produkt": 373704,
+						"Schweregrad": "0",
+						"TextTyp": 25,
+						"Text_ID": 112894,
+						"ProduktDetails": {
+							"__deferred": {
+								"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(112894)/ProduktDetails"
+							}
+						},
+						"TextTypDetails": {
+							"__metadata": {
+								"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(25)",
+								"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(25)",
+								"type": "arznei-mobil.TextTyp"
+							},
+							"Bezeichnung": "Hinweise und Vorsichtsmaßnahmen",
+							"Id": 25,
+							"Produkt_TextDetails": {
+								"__deferred": {
+									"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(25)/Produkt_TextDetails"
+								}
+							}
+						},
+						"TexteDetails": {
+							"__metadata": {
+								"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Textes(112894)",
+								"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Textes(112894)",
+								"type": "arznei-mobil.Texte"
+							},
+							"Id": 112894,
+							"Text_Data": "<h2 style=\"font-size:medium\">Hinweise und Vorsichtsmaßnahmen, Wirkstoffprofil <br />(kumulative Wirkstoffangaben ohne Berücksichtigung des individuellen Zulassungsstatus)</h2><br /><ul><li>Anwendung bei Kindern und Jugendlichen mit mit Virusinfektion bzw. fieberhaften Erkrankungen <ul><li>Anwendung nur auf ärztliche Anweisung und nur, wenn andere Maßnahmen nicht wirken</li><li>Auftreten von zu lang anhaltendem Erbrechen ist ein mögliches Zeichen des Reye-Syndroms: erfordert unbedingt sofortige ärztliche Behandlung</li></ul></li><li>besonders sorgfältige ärztliche Überwachung erforderlich bei<ul><li>Überempfindlichkeit gegen andere Entzündungshemmer/Antirheumatika oder andere allergene Stoffe</li><li>Allergien, z. B. mit<ul><li>Hautreaktionen</li><li>Juckreiz</li><li>Nesselfieber</li></ul></li><li>Asthma</li><li>Heuschnupfen</li><li>Nasenschleimhautschwellungen (Nasenpolypen)</li><li>chronischen Atemwegserkrankungen</li><li>gleichzeitiger Therapie mit blutgerinnungshemmenden Arzneimitteln</li><li>Magen- oder Darmgeschwüren</li><li>Magen- Darmblutungen in der Vorgeschichte</li><li>eingeschränkter Leberfunktion</li><li>eingeschränkter Nierenfunktion</li><li>vor Operationen (auch bei kleineren Eingriffen wie z. B. Zahnextraktionen)<ul><li>verstärkte Blutungsneigung möglich</li></ul></li><li>bekannte Läsionen der Magenschleimhaut</li><li>Dyspepsie</li><li>Hyperurikämie</li><li>Bluthochdruck und/oder Herzinsuffizienz in der Anamnese</li><li>bei Glucose- 6- Phosphatdehydrogenasemangel<ul><li>bei schweren Formen des G6PD-Mangels kann Acetylsalicylsäure in hoher Dosierung eine Hämolyse auslösen<ul><li>bei Patienten mit G6PD-Mangel Anwendung nur unter ärztlicher Aufsicht</li></ul></li></ul></li><li>in der ersten 6 Monaten der Schwangerschaft</li><li>Diabetes mellitus</li><li>Patienten die Diueretika nehmen</li><li>Patientinnen mit Metrorrhagie oder Menorrhagie<ul><li>Gefahr der Verstärkung und Verlängerung der Monatsblutung</li></ul></li></ul></li><li>Arztkonsultation bei<ul><li>hohem Fieber</li><li>Anzeichen einer Sekundärinfektion </li><li>Anhalten der Symptome über mehr als 3 Tage</li></ul></li><li>Therapieabbruch und Arztkonsultation bei<ul><li>abdominalen Schmerzen</li><li>Teerstuhl</li><li>Hämatemesis</li></ul></li><li>dauerhafte Einnahme von Schmerzmitteln<ul><li>Kopfschmerzen möglich, die zu erneuter Einnahme führen und damit wiederum eine Fortdauer der Kopfschmerzen bewirken können</li></ul></li><li>gewohnheitsmäßige Einnahme von Schmerzmitteln kann zur dauerhaften Nierenschädigung mit dem Risiko eines Nierenversagens (Analgetika-Nephropathie) führen<ul><li>Risiko v.a. bei Kombination mehrerer verschiedener Schmerzmittel</li></ul></li><li>bei Neuauftreten oder Verschlimmerung von Zeichen einer Infektion <ul><li>unverzüglich Arztkonsultation</li><li>Überprüfung ob Indikation für eine antiinfektiöse/antibiotische Therapie vorliegt</li></ul></li><li>Acetylsalicylsäure vermindert in niedriger Dosierung die Harnsäureausscheidung<ul><li>Auslösung eines Gichtanfalls möglich</li></ul></li><li>Alkoholgenuss<ul><li>gleichzeitige Anwendung von NSAR und Alkohol können wirkstoffbedingte Nebenwirkungen, insb. den GIT und das Nervensystem betreffend, verstärken</li></ul></li><li>Gastrointestinale Wirkungen<ul><li>beim Auftreten von gastrointestinalen Blutungen oder Ulzera soll die Behandlung mit Acetylsalicylsäure abgebrochen werden</li><li>gleichzeitige Gabe von Acetylsalicylsäure und anderen NSAR, einschließlich COX-2-selektiven Inhibitoren, sollte vermieden werden</li><li>während der Behandlung mit allen NSAR sind schwerwiegende gastrointestinale Blutungen, Geschwüre oder Perforationen, auch mit letalem Ausgang, zu jedem Zeitpunkt der Therapie mit oder ohne Warnsignale oder frühere schwerwiegende gastrointestinale Nebenwirkungen, berichtet worden</li><li>bei älteren Menschen kommt es unter NSAR-Therapie häufiger zu unerwünschten Wirkungen, insbesondere Blutungen und Perforationen im Gastrointestinaltrakt, die lebensbedrohlich sein können</li><li>Patienten mit einer Anamnese gastrointestinaler Toxizität, insbesondere im hö-heren Alter, sollen jedes ungewöhnliche Symptom im Magen-Darm-Bereich (vor allem gastrointestinale Blutungen) melden</li><li>Vorsicht ist bei Patienten geboten, die gleichzeitig mit Arzneimitteln behandelt werden, die das Risiko für Ulzera oder Blutungen erhöhen können, wie z.B. orale Kortikoide, Antikoagulanzien, wie z.B. Warfarin, selektive Serotonin-Wiederaufnahmeinhibitoren oder Thrombozytenaggregationshemmer, wie z.B. Acetylsalicylsäure in geringen Dosen zur Behandlung kardiovaskulärer Erkrankungen</li><li>das Risiko einer gastrointestinalen Blutung, Ulzeration oder Perforation erhöht sich mit ansteigender Dosis der NSAR, für Patienten mit Ulzera in der Anamnese, insbesondere mit den Komplikationen Blutung oder Perforation und ältere Patienten<ul><li>einleitend mit der niedrigsten möglichen Dosis behandeln</li><li>Behandlung mit NSAR in Kombination mit protektiven Arzneimitteln (z.B. Misoprostol oder Protonen- Pumpen-Hemmer) sollte in diesen Fällen in Erwägung gezogen werden</li><li>gilt auch für Patienten, die gleichzeitig andere Arzneimittel einnehmen, die das Risiko gastrointestinaler Nebenwirkungen erhöhen</li></ul></li></ul></li><li>Einnahme während folgender Situationen nicht empfohlen:<ul><li>während der Stillzeit</li><li>Einnahme mit Arzneimitteln, die Acetylsalicylsäure enthalten, oder andere nichtsteroidale Antiphlogistika <ul><li>Bei gleichzeitiger Anwendung anderer nichtsteroidaler Antiphlogistika (NSARs);<ul><li>dies gilt für Acetylsalicylsäure in antiinflammatorischer Dosierung (= 1 g pro Einzeldosis und/oder = 3 g/Tag) sowie in analgetischer oder antipyretischer Dosierung (= 500 mg pro Einzeldosis und/ oder &lt; 3 g/Tag) </li></ul></li><li>Einnahme ggf. nur unter ärztl. Kontrolle</li><li>zur Vermeidung von Überdosierungen</li></ul></li><li>bei gleichzeitiger Anwendung mit<ul><li>oralen Antikoagulanzien; <ul><li>dies gilt für Acetylsalicylsäure in analgetischer oder antipyretischer Dosierung (= 500 mg pro Einzeldosis und/oder &lt; 3 g/Tag) und </li><li>für Patienten ohne Gastroduodenalulkus in der Anamnese</li></ul></li><li>niedermolekularen Heparinen (und ähnlicher Substanzen) und unfraktioniertenHeparine in kurativer Dosierung sowie, unabhängig von der Heparindosis, bei älteren Patienten (= 65 Jahre); dies gilt für Acetylsalicylsäure<br />in antiinflammatorischer (= 1 g pro Einzeldosis und/oder = 3 g/Tag) wie in analgetischer oder antipyretischer Dosierung (= 500 mg pro Einzeldosis und/ oder &lt; 3 g/Tag)</li><li>Clopidogrel (außerhalb der zugelassenen Indikationenfür diese Kombination beiPatienten mit akutem Koronarsyndrom)</li><li>Ticlopidin</li><li>Glucocorticoiden (ausgenommen eine Ersatztherapie mit Hydrocortison); <ul><li>dies gilt für Acetylsalicylsäure in antiinflammatorischer Dosierung (= 1 g pro Einzeldosis und/oder = 3 g/Tag)</li></ul></li><li>Pemetrexed <ul><li>bei Patienten mit leichter bis mäßiger Niereninsuffizienz (Kreatinin-Clearance zwischen 45 ml/min und 80 ml/min)</li></ul></li><li>Anagrelid<ul><li>Erhöhtes Blutungsrisiko</li><li>Schmälerung der antithrombotischen Wirkung</li></ul></li></ul></li></ul></li></ul><p> </p>"
+						}
+					}, {
+						"__metadata": {
+							"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(121195)",
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(121195)",
+							"type": "arznei-mobil.Produkt_Text"
+						},
+						"Produkt": 373704,
+						"Schweregrad": "0",
+						"TextTyp": 61,
+						"Text_ID": 121195,
+						"ProduktDetails": {
+							"__deferred": {
+								"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(121195)/ProduktDetails"
+							}
+						},
+						"TextTypDetails": {
+							"__metadata": {
+								"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(61)",
+								"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(61)",
+								"type": "arznei-mobil.TextTyp"
+							},
+							"Bezeichnung": "CGSW_Verkehrstüchtigkeit/Bedienung von Maschinen",
+							"Id": 61,
+							"Produkt_TextDetails": {
+								"__deferred": {
+									"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(61)/Produkt_TextDetails"
+								}
+							}
+						},
+						"TexteDetails": {
+							"__metadata": {
+								"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Textes(121195)",
+								"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Textes(121195)",
+								"type": "arznei-mobil.Texte"
+							},
+							"Id": 121195,
+							"Text_Data": "<ul><li>keine besonderen Vorsichtsmaßnahmen erforderlich</li></ul>"
+						}
+					}, {
+						"__metadata": {
+							"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(4803)",
+							"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(4803)",
+							"type": "arznei-mobil.Produkt_Text"
+						},
+						"Produkt": 373704,
+						"Schweregrad": "0",
+						"TextTyp": 40,
+						"Text_ID": 4803,
+						"ProduktDetails": {
+							"__deferred": {
+								"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkt_Texts(4803)/ProduktDetails"
+							}
+						},
+						"TextTypDetails": {
+							"__metadata": {
+								"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(40)",
+								"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(40)",
+								"type": "arznei-mobil.TextTyp"
+							},
+							"Bezeichnung": "Hinweise / Warnhinweise für Anwendung und Dosierung",
+							"Id": 40,
+							"Produkt_TextDetails": {
+								"__deferred": {
+									"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/TextTyps(40)/Produkt_TextDetails"
+								}
+							}
+						},
+						"TexteDetails": {
+							"__metadata": {
+								"id": "http://localhost:8080/mediminder/ArzneiMobil.svc/Textes(4803)",
+								"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Textes(4803)",
+								"type": "arznei-mobil.Texte"
+							},
+							"Id": 4803,
+							"Text_Data": "<h2 style=\"font-size:medium\">Hinweise / Warnhinweise für Anwendung und Dosierung</h2><br />Mit Flüssigkeit einnehmen."
+						}
+					}]
+				},
+				"Produkt_WirkstoffDetails": {
+					"__deferred": {
+						"uri": "http://localhost:8080/mediminder/ArzneiMobil.svc/Produkts(373704)/Produkt_WirkstoffDetails"
+					}
+				}
+			}
+		},
+		"medicationSchedule": {
+			"dailySchedules": [{
+				"time": "8:00 PM",
+				"quantity": 1,
+				"unit": "C62"
+			}],
+			"endDateDisabled": true,
+			"endDate": "2017-02-07T16:13:58.887Z"
+		}
+	}
+}

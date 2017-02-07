@@ -12,6 +12,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinColumns;
 import javax.persistence.ManyToOne;
+import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
@@ -22,7 +23,8 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name = "Produkt")
-@NamedQuery(name = "Produkt.findAll", query = "SELECT p FROM Produkt p")
+@NamedQueries({ @NamedQuery(name = "Produkt.findAll", query = "SELECT p FROM Produkt p"),
+		@NamedQuery(name = "Produkt.findByWirkstoff", query = "SELECT p FROM Produkt p JOIN p.wirkstoffe w JOIN w.wirkstoff ww WHERE ww.bezeichnung = :wirkstoff") })
 public class Produkt implements Serializable {
 	private static final long serialVersionUID = 1L;
 
@@ -43,11 +45,11 @@ public class Produkt implements Serializable {
 	@OneToMany(mappedBy = "produkt")
 	private List<Produkt_Wirkstoff> wirkstoffe;
 
-	@ManyToOne(optional=true, fetch=FetchType.LAZY)
+	@ManyToOne(optional = true, fetch = FetchType.LAZY)
 	@JoinColumns({ @JoinColumn(name = "ATC", referencedColumnName = "_id") })
 	private Atc atc;
 
-	@ManyToOne(optional=true, fetch=FetchType.LAZY)
+	@ManyToOne(optional = true, fetch = FetchType.LAZY)
 	@JoinColumns({ @JoinColumn(name = "Darreichung_ID", referencedColumnName = "_id") })
 	private Darreichung darreichung;
 
@@ -56,8 +58,8 @@ public class Produkt implements Serializable {
 
 	@OneToMany(mappedBy = "produkt")
 	private List<Produkt_Interaktion> produktInteraktions;
-	
-	@OneToMany(mappedBy= "produkt")
+
+	@OneToMany(mappedBy = "produkt")
 	private List<Produkt_Text> produktTexte;
 
 	public Produkt() {

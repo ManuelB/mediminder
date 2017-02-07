@@ -8,27 +8,40 @@ Code distributed by Google as part of the polymer project is also
 subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
 -->
 
+<link rel="import" href="bower_components/polymer/polymer.html">
+<link rel="import" href="dosage-dialog/dosage-dialog.html">
 <link rel="import" href="pzn-scanner/pzn-scanner.html">
+<link rel="import" href="bower_components/paper-fab-menu/paper-fab-menu.html" />
 
-<link rel="import" href="https://cdn.rawgit.com/download/polymer-cdn/1.7.0.2/lib/polymer/polymer.html">
+<link rel="import" href="redux-store.html">
 
-<link rel="import" href="https://cdn.rawgit.com/download/polymer-cdn/1.7.0.2/lib/iron-icons/iron-icons.html">
-<link rel="import" href="https://cdn.rawgit.com/download/polymer-cdn/1.7.0.2/lib/iron-ajax/iron-ajax.html">
 
-<link rel="import" href="https://cdn.rawgit.com/download/polymer-cdn/1.7.0.2/lib/paper-icon-button/paper-icon-button.html">
-<link rel="import" href="https://cdn.rawgit.com/download/polymer-cdn/1.7.0.2/lib/paper-fab/paper-fab.html">
-<link rel="import" href="https://cdn.rawgit.com/download/polymer-cdn/1.7.0.2/lib/paper-dialog/paper-dialog.html">
-<link rel="import" href="https://cdn.rawgit.com/download/polymer-cdn/1.7.0.2/lib/paper-dialog-scrollable/paper-dialog-scrollable.html">
-<link rel="import" href="https://cdn.rawgit.com/download/polymer-cdn/1.7.0.2/lib/paper-button/paper-button.html">
-<link rel="import" href="https://cdn.rawgit.com/download/polymer-cdn/1.7.0.2/lib/paper-input/paper-input.html">
-<link rel="import" href="https://cdn.rawgit.com/download/polymer-cdn/1.7.0.2/lib/paper-toast/paper-toast.html">
+<link rel="import" href="bower_components/iron-icon/iron-icon.html">
+<link rel="import" href="bower_components/iron-icons/iron-icons.html">
+<link rel="import" href="bower_components/iron-icons/image-icons.html">
+<link rel="import" href="bower_components/iron-icons/maps-icons.html">
+<link rel="import" href="bower_components/iron-ajax/iron-ajax.html">
 
-<link rel="import" href="https://cdn.rawgit.com/download/polymer-cdn/1.7.0.2/lib/app-layout/app-drawer-layout/app-drawer-layout.html">
-<link rel="import" href="https://cdn.rawgit.com/download/polymer-cdn/1.7.0.2/lib/app-layout/app-drawer/app-drawer.html">
-<link rel="import" href="https://cdn.rawgit.com/download/polymer-cdn/1.7.0.2/lib/app-layout/app-scroll-effects/app-scroll-effects.html">
-<link rel="import" href="https://cdn.rawgit.com/download/polymer-cdn/1.7.0.2/lib/app-layout/app-header/app-header.html">
-<link rel="import" href="https://cdn.rawgit.com/download/polymer-cdn/1.7.0.2/lib/app-layout/app-header-layout/app-header-layout.html">
-<link rel="import" href="https://cdn.rawgit.com/download/polymer-cdn/1.7.0.2/lib/app-layout/app-toolbar/app-toolbar.html">
+<link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="bower_components/paper-item/paper-item.html">
+<link rel="import" href="bower_components/paper-item/paper-icon-item.html">
+<link rel="import" href="bower_components/paper-item/paper-item-body.html">
+<link rel="import" href="bower_components/paper-fab/paper-fab.html">
+<link rel="import" href="bower_components/paper-card/paper-card.html">
+<link rel="import" href="bower_components/paper-dialog/paper-dialog.html">
+<link rel="import" href="bower_components/paper-dialog-scrollable/paper-dialog-scrollable.html">
+<link rel="import" href="bower_components/paper-button/paper-button.html">
+<link rel="import" href="bower_components/paper-input/paper-input.html">
+<link rel="import" href="bower_components/paper-toast/paper-toast.html">
+<link rel="import" href="bower_components/paper-menu/paper-menu.html">
+<link rel="import" href="bower_components/paper-menu/paper-submenu.html">
+
+<link rel="import" href="bower_components/app-layout/app-drawer-layout/app-drawer-layout.html">
+<link rel="import" href="bower_components/app-layout/app-drawer/app-drawer.html">
+<link rel="import" href="bower_components/app-layout/app-scroll-effects/app-scroll-effects.html">
+<link rel="import" href="bower_components/app-layout/app-header/app-header.html">
+<link rel="import" href="bower_components/app-layout/app-header-layout/app-header-layout.html">
+<link rel="import" href="bower_components/app-layout/app-toolbar/app-toolbar.html">
 
 <dom-module id="mediminder-app">
   <template>
@@ -41,39 +54,119 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       app-header paper-icon-button {
         --paper-icon-button-ink-color: white;
       }
-      paper-fab {
+      paper-fab-menu {
         position: fixed;
         right: 25px;
         bottom: 30px;          
+      }
+      paper-card {
+      	display: block;
+      	width: 80%;
+      	margin: 1em auto;
+      }
+      #pznScanDialog {
+      	width: 660px;
+      	height: 500px;
+      }
+      h1 {
+      	text-align: center;
+      }
+      .card-actions paper-button {
+      	float: right;
+      }
+      div.clear {
+      	clear: both;
+      	float: none;
       }
     </style>
 
     <app-drawer-layout>
 
-      <app-drawer>
-        <app-toolbar>Aktuelle Medikamente</app-toolbar>
+      <app-drawer align="end" swipe-open>
+        <app-toolbar>Meine Medikamente</app-toolbar>
+        <div role="listbox">
+		  <template is="dom-repeat" items="{{medicines}}">
+			  <paper-icon-item>
+			    <iron-icon icon="maps:local-pharmacy" item-icon>
+			    </iron-icon>
+			    <paper-item-body two-line>
+			      <div>[[item.article.ProduktDetails.Bezeichnung]]</div>
+			      <div secondary>PZN: [[item.article.Id]]</div>
+			    </paper-item-body>
+			    <paper-icon-button icon="delete" on-tap="onDeleteMedicine"></paper-icon-button>
+			  </paper-icon-item>
+		  </template>
+		</div>
       </app-drawer>
 
       <app-header-layout>
 
         <app-header reveals effects="waterfall">
           <app-toolbar>
-            <paper-icon-button icon="menu" drawer-toggle></paper-icon-button>
-            <div main-title>Medi Minder - Keine Medikamente vergessen!</div>
+            <div main-title>Medi Minder</div>
+            <paper-icon-button icon="menu" align="end" drawer-toggle></paper-icon-button>
           </app-toolbar>
         </app-header>
 
-        <!-- <pzn-scanner></pzn-scanner>  -->
-
       </app-header-layout>
+      
+      <!-- Top 10 Medikamente -->
+      <iron-ajax
+    		id="ArnzneiMobilTopAgents"
+		    auto
+		    url="[[arnzeiMobilTopAgentsODataPath]]"
+		    params=""
+		    handle-as="json"
+		    on-response="onArnzeiMobilTopAgentsAjaxResponse"
+		    on-error="onArnzneiMobilAjaxError"
+		    debounce-duration="300"></iron-ajax>
+	  <h1>Top 10 Wirkstoffe in Deutschland</h1>
+      <template is="dom-repeat" items="{{topAgents}}">
+	      <paper-card heading="{{item.Bezeichnung}}">
+	      	<div class="card-content">
+	      	</div>
+	      	<div class="card-actions">
+			  <paper-button on-tap="onSelectAgent">Produkte finden</paper-button>
+			  <div class="clear"></div>
+			</div>
+	      </paper-card>
+      </template>
+      <paper-dialog id="productsWithAgentDialog">
+	    <h1>Produkte mit Wirksoff: {{agent}}</h1>
+    	<paper-dialog-scrollable>
+	      	<paper-menu>
+	      		<template is="dom-repeat" items="{{productsWithAgent}}">
+	      			<paper-submenu>
+	      				<paper-item class="menu-trigger">{{item.ProduktDetails.Bezeichnung}}</paper-item>
+	      				<paper-menu class="menu-content">
+	      					<template is="dom-repeat" items="{{item.ProduktDetails.ArtikelDetails.results}}">
+	      						<paper-item on-click="onSelectProductWithAgent">{{item.Menge}}</paper-item>
+	      		 			</template>
+	      		 		</paper-menu>
+	      		</template>
+	      	</paper-menu>
+    	</paper-dialog-scrollable>
+      	<iron-ajax
+    		id="ArnzneiMobilProductsWithAgentAjax"
+		    auto
+		    url="[[arnzeiMobilProductsWithAgentODataPath]]"
+		    params=""
+		    handle-as="json"
+		    on-response="onArnzneiMobilProductsWithAgentAjaxResponse"
+		    on-error="onArnzneiMobilAjaxError"
+		    debounce-duration="300"></iron-ajax>
+      </paper-dialog>
 
     </app-drawer-layout>
     
     <!-- TODO: Replace with: http://spacee.xyz/polymer-components/paper-fab-menu/demo.html  -->
-    <paper-fab icon="add" on-click="openPznEnterDialog"></paper-fab>
-    
+    <paper-fab-menu icon="add" position="vertical">
+		<paper-fab-menu-item label="PZN Barcode Scannen" icon="image:photo-camera" on-click="openPznScanDialog"></paper-fab-menu-item>
+		<paper-fab-menu-item label="PZN per Hand eingeben" icon="add" on-click="openPznEnterDialog"></paper-fab-menu-item>
+	</paper-fab-menu>
+    <paper-dialog id="pznScanDialog"></paper-dialog>
     <paper-dialog id="pznEnterDialog">
-    	<paper-input id="pznNumber" always-float-label label="PZN Nummer"></paper-input>
+    	<paper-input id="pznNumber" always-float-label label="PZN Nummer" placeholder="z.B. 78597"></paper-input>
     	<div class="buttons">
 	    	<paper-button dialog-confirm on-click="processPZNNumber">Suchen</paper-button>
 	    </div>
@@ -88,19 +181,21 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 		    debounce-duration="300"></iron-ajax>
     </paper-dialog>
     
-    <paper-dialog id="showArticle">
+    <paper-dialog id="showArticleDialog">
+	    <h1>[[article.ProduktDetails.Bezeichnung]]</h1>
     	<paper-dialog-scrollable>
-    	<h1>[[article.ProduktDetails.Bezeichnung]]</h1>
-    	<template is="dom-repeat" items="{{article.ProduktDetails.Produkt_TextDetails.results}}">
-	        <h2>{{index}} {{item.TextTypDetails.Bezeichnung}}</h2>
-	        <p>{{item.TexteDetails.Text_Data}}</p>
-	    </template>
+	    	<template is="dom-repeat" items="{{article.ProduktDetails.Produkt_TextDetails.results}}">
+		        <!-- <h2>{{index}} {{item.TextTypDetails.Bezeichnung}}</h2>  -->
+		        <div inner-h-t-m-l="{{item.TexteDetails.Text_Data}}"></div>
+		    </template>
 	    </paper-dialog-scrollable>
     	<div class="buttons">
-    		<paper-button abort on-click="">Abbrechen</paper-button>
-	    	<paper-button dialog-confirm on-click="addArticlesToReminders">Zu Medikamentenerinnerung hinzufügen</paper-button>
+    		<paper-button abort on-tap="onCloseShowArticleDialog">Abbrechen</paper-button>
+	    	<paper-button dialog-confirm on-tap="onAddArticlesToReminders">Zu Medikamentenerinnerung hinzufügen</paper-button>
 	    </div>
     </paper-dialog>
+    
+    <dosage-dialog id="dosageDialog" on-dosage-added="onDosageAdded"></dosage-dialog>
     
     <paper-toast id="toast"></paper-toast>
 
@@ -109,36 +204,120 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <script>
     Polymer({
       is: 'mediminder-app',
+      behaviors: [ReduxBehavior],
       properties: {
     	  arnzeiMobilODataPath: String,
+    	  arnzeiMobilTopAgentsODataPath: String,
+    	  arnzeiMobilProductsWithAgentODataPath: String,
     	  article: {
 			type: Object
+          },
+          medicines: {
+			type: Array,
+			statePath: 'medicines'
+          },
+          topAgents: {
+			type: Array
+          },
+          agent: {
+			type: String
+          },
+          productsWithAgent: {
+			type: Array
           }
+      },
+      ready : function (e) {
+          // https://www.welt.de/gesundheit/article108595998/Das-sind-die-Lieblingsmedikamente-der-Deutschen.html
+          // Ibuprofen, Levothyroxin-Natrium, Metoprolol, Diclofenac, Ramipril, Simvastatin, Metamizol-Natrium, Omeprazol, Bisoprolol, Pantoprazol
+    	  
+    	  let agents = ["Ibuprofen", "Levothyroxin, Natriumsalz", "Metoprolol succinat", "Diclofenac, Natriumsalz", "Ramipril", "Simvastatin", "Metamizol Natrium 1-Wasser", "Omeprazol", "Bisoprolol hemifumarat", "Pantoprazol Natrium 1,5-Wasser"];
+    	  this.arnzeiMobilTopAgentsODataPath = "ArzneiMobil.svc/Wirkstoffs?$filter="+encodeURIComponent("Bezeichnung eq '"+agents.join("' or Bezeichnung eq '")+"'");
       },
       openPznEnterDialog : function (e) {
 		this.$.pznEnterDialog.open();
 		this.$.pznNumber.focus();
       },
+      openPznScanDialog : function (e) {
+        var me = this;
+		if(!this.pznScanner) {
+			this.pznScanner = document.createElement("pzn-scanner");
+			// In the case ESC is hit 
+			this.$.pznScanDialog.addEventListener("iron-overlay-closed", function (e) {
+				me.pznScanner.stopVideo();
+			});
+			this.pznScanner.addEventListener("code-detected", function (e) {
+				me.pznScanner.stopVideo();
+				me.$.pznScanDialog.close();
+				me.fetchDataForPzn(e.detail.code);
+				
+			});
+			this.$.pznScanDialog.appendChild(this.pznScanner);
+		} else {
+			this.pznScanner.startVideo();
+		}
+		this.$.pznScanDialog.open();
+      },
       processPZNNumber : function (e) {
-        let pznNumber = parseInt(this.$.pznNumber.value);
-        if(pznNumber) {
-		    console.log("Processing: "+pznNumber);
-		    this.arnzeiMobilODataPath = "ArzneiMobil.svc/Artikels("+pznNumber+")?$expand=ProduktDetails,ProduktDetails/Produkt_TextDetails,ProduktDetails/Produkt_TextDetails/TexteDetails,ProduktDetails/Produkt_TextDetails/TextTypDetails";
-        }
+        let pznNumber = this.$.pznNumber.value;
+		this.fetchDataForPzn(pznNumber);
 		this.$.pznEnterDialog.close();
+      },
+      fetchDataForPzn: function (pznNumber) {
+          let pznNumberAbs = Math.abs(parseInt(pznNumber));
+    	  if(pznNumberAbs) {
+  		    console.log("Processing: "+pznNumberAbs);
+  		    this.pznNumber = pznNumberAbs;
+  		    this.arnzeiMobilODataPath = "ArzneiMobil.svc/Artikels("+pznNumberAbs+")?$expand=ProduktDetails,ProduktDetails/Produkt_TextDetails,ProduktDetails/Produkt_TextDetails/TexteDetails,ProduktDetails/Produkt_TextDetails/TextTypDetails&noCache="+(new Date().getTime());
+          }
+      },
+      onArnzeiMobilTopAgentsAjaxResponse : function (event) {
+    	  if(!event.detail.loading && event.detail && event.detail.response && event.detail.response.d) {
+          	this.topAgents = event.detail.response.d.results;
+    	  }
       },
       onArnzneiMobilAjaxResponse : function (event) {
 		if(!event.detail.loading && event.detail && event.detail.response && event.detail.response.d) {
 		    this.$.pznNumber.value = null;
 		    this.article = event.detail.response.d;
-		    this.$.showArticle.open();
+		    this.$.showArticleDialog.open();
 	    }
       },
       onArnzneiMobilAjaxError : function (response) {
-          this.$.toast.text = "PZN Nummer: "+this.$.pznNumber.value+" nicht gefunden.";
+          this.$.toast.text = "PZN Nummer: "+this.pznNumber+" nicht gefunden.";
           this.$.toast.open();
 		  console.log(response);
-      }
+      },
+      onCloseShowArticleDialog : function (event) {
+    	  this.$.showArticleDialog.close();
+      },
+      onAddArticlesToReminders : function (event) {
+    	  this.$.showArticleDialog.close();
+		  let dosierungText = undefined;
+    	  let dosierungsTexte = this.article.ProduktDetails.Produkt_TextDetails.results.filter(function (t) { return t.TextTypDetails.Bezeichnung == "Dosierung"});
+    	  if(dosierungsTexte.length > 0) {
+    		  dosierungText = dosierungsTexte[0].TexteDetails.Text_Data;
+          }
+    	  this.$.dosageDialog.open(dosierungText);
+      },
+      onDosageAdded : function (event) {
+    	  this.dispatch({type: 'ADD_MEDICINE', medicine: {article: this.article, medicationSchedule: event.detail.medicationSchedule}});
+      },
+      onDeleteMedicine : function (event) {
+    	  this.dispatch({type: 'DELETE_MEDICINE', medicine: event.model.item})
+      },
+      onSelectAgent : function (event) {
+    	  this.arnzeiMobilProductsWithAgentODataPath = "ArzneiMobil.svc/Produkt_Wirkstoffs?$filter=WirkstoffId eq "+event.model.item.Id+"&$expand=ProduktDetails,ProduktDetails/ArtikelDetails";
+      },
+      onArnzneiMobilProductsWithAgentAjaxResponse : function (event) {
+   	      if(!event.detail.loading && event.detail && event.detail.response && event.detail.response.d) {
+   	   	    this.$.productsWithAgentDialog.open();
+            this.productsWithAgent = event.detail.response.d.results;
+   	      }
+       },
+       onSelectProductWithAgent: function (event) {
+    	   this.$.productsWithAgentDialog.close();
+    	   this.fetchDataForPzn(event.model.item.Id);
+       }
     });
   </script>
 

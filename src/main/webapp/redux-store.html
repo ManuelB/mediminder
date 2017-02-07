@@ -1,0 +1,41 @@
+<link rel="import" href="bower_components/polymer-redux/polymer-redux.html">
+
+		    
+<script>
+const initialState = {
+		"medicines": []
+};
+
+const reducer = (state, action) => {
+	if(!state) {
+		return initialState;
+	}
+	let medicines;
+	switch (action.type) {
+		case 'ADD_MEDICINE':
+			medicines = state.medicines.slice(0);
+			medicines.push(action.medicine);
+			return Object.assign({}, state, {medicines: medicines});
+		case 'DELETE_MEDICINE':
+			medicines = state.medicines.filter(function (e) { return e != action.medicine});
+			return Object.assign({}, state, {medicines: medicines});
+	}
+};
+const sendToServer = store => next => action => {
+  var xhr = new XMLHttpRequest();
+  xhr.open('POST', 'resources/reduxServerStore/'+action.type, true);
+
+  xhr.setRequestHeader("Content-Type", 'application/json');
+  xhr.onreadystatechange = function(e) {
+    if (this.readyState == 4 && this.status == 200) {
+        console.log("Successfully send action to server.");
+    } else if(this.readyState == 4 && this.status != 200) {
+        console.log("Not successfully send action to server.");
+    }
+  };
+  xhr.send(JSON.stringify(action));
+  return next(action)
+}
+var store = Redux.createStore(reducer, Redux.applyMiddleware(sendToServer));
+var ReduxBehavior = PolymerRedux(store);
+</script>

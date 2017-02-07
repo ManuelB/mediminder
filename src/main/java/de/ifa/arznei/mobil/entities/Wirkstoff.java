@@ -1,6 +1,8 @@
 package de.ifa.arznei.mobil.entities;
 
 import java.io.Serializable;
+import java.util.List;
+
 import javax.persistence.*;
 
 
@@ -21,6 +23,9 @@ public class Wirkstoff implements Serializable {
 
 	@Column(name="Bezeichnung")
 	private String bezeichnung;
+	
+	@OneToMany(mappedBy="wirkstoff")
+	private List<Produkt_Wirkstoff> produktWirkstoff;
 
 	public Wirkstoff() {
 	}
@@ -39,6 +44,14 @@ public class Wirkstoff implements Serializable {
 
 	public void setBezeichnung(String bezeichnung) {
 		this.bezeichnung = bezeichnung;
+	}
+
+	public List<Produkt_Wirkstoff> getProduktWirkstoff() {
+		return produktWirkstoff;
+	}
+
+	public void setProduktWirkstoff(List<Produkt_Wirkstoff> produktWirkstoff) {
+		this.produktWirkstoff = produktWirkstoff;
 	}
 
 

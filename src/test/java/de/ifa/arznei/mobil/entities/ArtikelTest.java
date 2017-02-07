@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.persistence.EntityManager;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 public class ArtikelTest extends AbstractDatabaseTest {

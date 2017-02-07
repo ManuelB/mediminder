@@ -14,6 +14,14 @@ import javax.persistence.*;
 public class Produkt_Wirkstoff implements Serializable {
 	private static final long serialVersionUID = 1L;
 
+	@Id
+	@Column(name="Produkt_ID")
+	private int produktId;
+
+	@Id
+	@Column(name="Wirkstoff_ID")
+	private int wirkstoffId;
+	
 	@Column(name = "Basiseinheit")
 	private String basiseinheit;
 
@@ -30,15 +38,13 @@ public class Produkt_Wirkstoff implements Serializable {
 	private String sort;
 	
 	// bi-directional many-to-one association to Produkt
-	@Id
 	@ManyToOne
-	@JoinColumns({ @JoinColumn(name = "Produkt_ID", referencedColumnName = "_id") })
+	@JoinColumns({ @JoinColumn(name = "Produkt_ID", referencedColumnName = "_id", insertable=false, updatable=false) })
 	private Produkt produkt;
 
 	// bi-directional one-to-one association to Wirkstoff
-	@Id
 	@ManyToOne
-	@JoinColumns({ @JoinColumn(name = "Wirkstoff_ID", referencedColumnName = "_id") })
+	@JoinColumns({ @JoinColumn(name = "Wirkstoff_ID", referencedColumnName = "_id", insertable=false, updatable=false) })
 	private Wirkstoff wirkstoff;
 
 	public Produkt_Wirkstoff() {
@@ -106,6 +112,22 @@ public class Produkt_Wirkstoff implements Serializable {
 
 	public void setWirkstoff(Wirkstoff wirkstoff) {
 		this.wirkstoff = wirkstoff;
+	}
+
+	public int getProduktId() {
+		return produktId;
+	}
+
+	public void setProduktId(int produktId) {
+		this.produktId = produktId;
+	}
+
+	public int getWirkstoffId() {
+		return wirkstoffId;
+	}
+
+	public void setWirkstoffId(int wirkstoffId) {
+		this.wirkstoffId = wirkstoffId;
 	}
 
 }

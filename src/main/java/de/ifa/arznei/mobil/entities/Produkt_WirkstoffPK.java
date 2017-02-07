@@ -13,21 +13,21 @@ public class Produkt_WirkstoffPK implements Serializable {
 	private static final long serialVersionUID = 7119488550460330450L;
 	@Id
 	@Column(name="Produkt_ID")
-	private int produkt;
+	private int produktId;
 	@Id
 	@Column(name="Wirkstoff_ID")
-	private int wirkstoff;
+	private int wirkstoffId;
 
 	public int getProdukt() {
-		return produkt;
+		return produktId;
 	}
-	public void setProdukt(int produkt) {
-		this.produkt = produkt;
+	public void setProdukt(int produktId) {
+		this.produktId = produktId;
 	}
 	public int getWirkstoff() {
-		return wirkstoff;
+		return wirkstoffId;
 	}
-	public void setWirkstoff(int wirkstoff) {
-		this.wirkstoff = wirkstoff;
+	public void setWirkstoff(int wirkstoffId) {
+		this.wirkstoffId = wirkstoffId;
 	}
 }
