@@ -27,9 +27,9 @@ const sendToServer = store => next => action => {
 
   xhr.setRequestHeader("Content-Type", 'application/json');
   xhr.onreadystatechange = function(e) {
-    if (this.readyState == 4 && this.status == 200) {
+    if (this.readyState == 4 && (this.status == 200 || this.status == 204)) {
         console.log("Successfully send action to server.");
-    } else if(this.readyState == 4 && this.status != 200) {
+    } else if(this.readyState == 4) {
         console.log("Not successfully send action to server.");
     }
   };

@@ -36,7 +36,7 @@ public class RegularNotification {
 	public RegularNotification(String medicine, JsonObject jsonObject) {
 		setId(UUID.randomUUID().toString());
 		setMedicine(medicine);
-		setTime(jsonObject.getString("time"));
+		setTime(jsonObject.getString("time").toLowerCase());
 		setQuantity(jsonObject.getJsonNumber("quantity").doubleValue());
 		setUnit(jsonObject.getString("unit"));
 	}

@@ -19,8 +19,8 @@ self.addEventListener('push', function(event) {
 
   if (event.data) {
     const dataText = event.data.text();
-    notificationTitle = 'Received Payload';
-    notificationOptions.body = `Push data: '${dataText}'`;
+    notificationTitle = 'Medikamentenerinnerung';
+    notificationOptions.body = `${dataText}`;
   }
 
   event.waitUntil(

@@ -6,6 +6,7 @@ import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
 import java.security.NoSuchProviderException;
 import java.security.spec.InvalidKeySpecException;
+import java.text.NumberFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -31,6 +32,7 @@ import javax.json.JsonValue;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.ws.rs.Consumes;
+import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.core.MediaType;
@@ -91,7 +93,7 @@ public class ReduxServerStore {
 																		// calendar
 																		// instance
 				calendar.setTime(date); // assigns calendar to given date
-				hour = calendar.get(Calendar.HOUR);
+				hour = calendar.get(Calendar.HOUR_OF_DAY);
 				minute = calendar.get(Calendar.MINUTE);
 
 				schedule.hour(hour);
@@ -145,13 +147,20 @@ public class ReduxServerStore {
 		}
 	}
 
+	@GET
+	@Path("/DELETE_ALL_TIMERS")
+	public void DELETE_ALL_TIMERS() {
+		timerService.getAllTimers().stream().forEach((t) -> t.cancel());
+	}
+
 	@Timeout
 	public void sendNotification(Timer timer) {
 		RegularNotification regularNotification = em.find(RegularNotification.class, timer.getInfo());
 		try {
-			subscriptionService.send(regularNotification.getSubscription().getKey(), "Bitte nehmen von "
-					+ regularNotification.getMedicine() + " " + regularNotification.getQuantity() + " "
-					+ ("C62".equals(regularNotification.getQuantity()) ? "Stück" : regularNotification.getQuantity()));
+			subscriptionService.send(regularNotification.getSubscription().getKey(),
+					"Bitte nehmen Sie von " + regularNotification.getMedicine() + " "
+							+ NumberFormat.getInstance().format(regularNotification.getQuantity()) + " "
+							+ ("C62".equals(regularNotification.getUnit()) ? "Stück" : regularNotification.getUnit()));
 		} catch (InvalidKeyException | NoSuchAlgorithmException | InvalidKeySpecException | NoSuchProviderException
 				| NoSuchPaddingException | IllegalBlockSizeException | BadPaddingException
 				| InvalidAlgorithmParameterException | IOException | JoseException e) {
