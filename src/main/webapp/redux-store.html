@@ -2,9 +2,8 @@
 
 		    
 <script>
-const initialState = {
-		"medicines": []
-};
+// Load initial state from localStorage
+const initialState = window.localStorage.ReduxStore ? JSON.parse(window.localStorage.ReduxStore) : {"medicines": []};
 
 const reducer = (state, action) => {
 	if(!state) {
@@ -37,5 +36,11 @@ const sendToServer = store => next => action => {
   return next(action)
 }
 var store = Redux.createStore(reducer, Redux.applyMiddleware(sendToServer));
+
+// Save all new states to localStorage
+store.subscribe(function () {
+	let state = store.getState();
+	window.localStorage.ReduxStore = JSON.stringify(state);
+});
 var ReduxBehavior = PolymerRedux(store);
 </script>
