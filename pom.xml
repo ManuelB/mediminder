@@ -92,6 +92,15 @@
 			<artifactId>olingo-odata2-api-annotation</artifactId>
 			<version>${olingo.version}</version>
 		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.glassfish/javax.json -->
+		<dependency>
+			<groupId>org.glassfish</groupId>
+			<artifactId>javax.json</artifactId>
+			<version>1.0.4</version>
+			<scope>test</scope>
+		</dependency>
+
 	</dependencies>
 	<build>
 		<finalName>mediminder</finalName>

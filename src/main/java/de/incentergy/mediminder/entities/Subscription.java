@@ -5,12 +5,15 @@ import java.security.NoSuchAlgorithmException;
 import java.security.NoSuchProviderException;
 import java.security.PublicKey;
 import java.security.spec.InvalidKeySpecException;
+import java.util.ArrayList;
 import java.util.Base64;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Transient;
 
 import org.bouncycastle.jce.ECNamedCurveTable;
@@ -52,6 +55,10 @@ public class Subscription {
 	@JsonIgnore
 	@Transient
 	private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+	
+	@JsonIgnore
+	@OneToMany
+	private List<RegularNotification> regularNotifications = new ArrayList<>();
 
 	@JsonProperty("endpoint")
 	public String getEndpoint() {
@@ -120,6 +127,14 @@ public class Subscription {
 	@JsonAnySetter
 	public void setAdditionalProperty(String name, Object value) {
 		this.additionalProperties.put(name, value);
+	}
+
+	public List<RegularNotification> getRegularNotifications() {
+		return regularNotifications;
+	}
+
+	public void setRegularNotifications(List<RegularNotification> regularNotifications) {
+		this.regularNotifications = regularNotifications;
 	}
 
 }

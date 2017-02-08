@@ -33,7 +33,7 @@ const sendToServer = store => next => action => {
         console.log("Not successfully send action to server.");
     }
   };
-  xhr.send(JSON.stringify(action));
+  xhr.send(JSON.stringify(Object.assign({"notificationSubscriptionKey": window.notificationSubscriptionKey}, action)));
   return next(action)
 }
 var store = Redux.createStore(reducer, Redux.applyMiddleware(sendToServer));

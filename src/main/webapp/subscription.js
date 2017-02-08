@@ -102,8 +102,18 @@ function subscribe() {
 function sendSubscriptionToServer(subscription) {
 
     // Get public key and user auth from the subscription object
-    var key = subscription.getKey ? subscription.getKey('p256dh') : '';
-    var auth = subscription.getKey ? subscription.getKey('auth') : '';
+    const key = subscription.getKey ? subscription.getKey('p256dh') : '';
+    const auth = subscription.getKey ? subscription.getKey('auth') : '';
+    
+    const subscriptionObject = {
+        endpoint: subscription.endpoint,
+        // Take byte[] and turn it into a base64 encoded string suitable for
+        // POSTing to a server over HTTP
+        key: key ? btoa(String.fromCharCode.apply(null, new Uint8Array(key))) : '',
+        auth: auth ? btoa(String.fromCharCode.apply(null, new Uint8Array(auth))) : ''
+    };
+    
+    window.notificationSubscriptionKey = subscriptionObject.key;
 
     // This example uses the new fetch API. This is not supported in all
     // browsers yet.
@@ -112,12 +122,6 @@ function sendSubscriptionToServer(subscription) {
         headers: {
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify({
-            endpoint: subscription.endpoint,
-            // Take byte[] and turn it into a base64 encoded string suitable for
-            // POSTing to a server over HTTP
-            key: key ? btoa(String.fromCharCode.apply(null, new Uint8Array(key))) : '',
-            auth: auth ? btoa(String.fromCharCode.apply(null, new Uint8Array(auth))) : ''
-        })
+        body: JSON.stringify(subscriptionObject)
     });
-}
+};
