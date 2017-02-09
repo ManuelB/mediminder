@@ -1,0 +1,49 @@
+{
+  "name": "mediminder",
+  "authors": [
+    "Manuel Blechschmidt <manuel.blechschmidt@incentergy.de>"
+  ],
+  "description": "Reminder for medification based on Java EE 7 (wildfly), Polymer, Redux and the latest and greatest HTML5 technology.",
+  "main": "",
+  "keywords": [
+    "Polymer",
+    "Redux",
+    "Java",
+    "JavaScript",
+    "QuaggaJS"
+  ],
+  "license": "MIT",
+  "homepage": "https://www.medi-minder.de",
+  "private": true,
+  "directory": "src/main/webapp/bower_components/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "core-icon": "Polymer/core-icon#master",
+    "app-layout": "^0.10.6",
+    "iron-ajax": "^1.4.3",
+    "iron-elements": "PolymerElements/iron-elements#^1.0.10",
+    "layout": "polymer/layout#master",
+    "paper-button": "^1.0.14",
+    "paper-card": "PolymerElements/paper-card#^1.1.4",
+    "paper-date-picker": "polymer-paper-date-picker#^1.2.0",
+    "paper-dialog-scrollable": "^1.1.5",
+    "paper-dialog": "^1.1.0",
+    "paper-elements": "PolymerElements/paper-elements#^1.0.7",
+    "paper-fab-menu": "paperfabmenu#^1.0.2",
+    "paper-icon-button": "^1.1.4",
+    "paper-input": "^1.1.23",
+    "paper-item": "^1.2.1",
+    "paper-menu": "^1.2.2",
+    "paper-shadow": "polymer/paper-shadow#0.8-preview",
+    "paper-time-picker": "^1.1.4",
+    "paper-toast": "^1.3.0",
+    "polymer-redux": "^0.3.1",
+    "polymer": "^1.8.0"
+  }
+}

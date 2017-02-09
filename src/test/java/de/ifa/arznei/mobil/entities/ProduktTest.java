@@ -8,11 +8,13 @@ import java.util.List;
 
 import javax.persistence.EntityManager;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 public class ProduktTest extends AbstractDatabaseTest {
 
 	@Test
+	@Ignore
 	public void testGetProduktMitWirkstoff() throws IOException {
 		EntityManager em = getEntityManager();
 		List<String> wirkstoffe = Arrays.asList("Ibuprofen", "Levothyroxin, Natriumsalz", "Metoprolol succinat",

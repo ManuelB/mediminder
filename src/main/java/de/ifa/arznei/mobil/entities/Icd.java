@@ -1,7 +1,15 @@
 package de.ifa.arznei.mobil.entities;
 
 import java.io.Serializable;
-import javax.persistence.*;
+import java.util.List;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToMany;
+import javax.persistence.NamedQuery;
 
 
 /**
@@ -23,6 +31,9 @@ public class Icd implements Serializable {
 
 	@Column(name="Parent_ICD")
 	private String parent_ICD;
+	
+	@ManyToMany(mappedBy="icds")
+	private List<Atc> atcs;
 
 	public Icd() {
 	}
@@ -49,6 +60,20 @@ public class Icd implements Serializable {
 
 	public void setParent_ICD(String parent_ICD) {
 		this.parent_ICD = parent_ICD;
+	}
+
+	/**
+	 * @return the atcs
+	 */
+	public List<Atc> getAtcs() {
+		return atcs;
+	}
+
+	/**
+	 * @param atcs the atcs to set
+	 */
+	public void setAtcs(List<Atc> atcs) {
+		this.atcs = atcs;
 	}
 
 }

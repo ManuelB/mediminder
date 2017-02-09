@@ -90,14 +90,6 @@ public class Produkt_Wirkstoff implements Serializable {
 		this.sort = sort;
 	}
 
-	public int getWirkstoff_ID() {
-		return this.wirkstoff_ID;
-	}
-
-	public void setWirkstoff_ID(int wirkstoff_ID) {
-		this.wirkstoff_ID = wirkstoff_ID;
-	}
-
 	public Produkt getProdukt() {
 		return this.produkt;
 	}

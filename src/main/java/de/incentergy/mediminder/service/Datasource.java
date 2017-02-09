@@ -10,7 +10,7 @@ import javax.ejb.Singleton;
 @Singleton
 @DataSourceDefinition(
 	name = "java:app/ArzneiMobil",
-	url = "jdbc:sqlite:/home/manuel/workspace/mediminder/src/main/resources/20160711_AaA_ifap_DS_20160715.sqlite",
+	url = "jdbc:sqlite:/home/manuel/workspace/mediminder/src/main/data/20160711_AaA_ifap_DS_20160715.sqlite",
 	className = "org.sqlite.SQLiteDataSource",
 	isolationLevel=Connection.TRANSACTION_READ_UNCOMMITTED)
 public class Datasource {

@@ -1,8 +1,21 @@
 package de.ifa.arznei.mobil.entities;
 
 import java.io.Serializable;
-import javax.persistence.*;
 import java.util.List;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinColumns;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
+import javax.persistence.NamedQuery;
+import javax.persistence.OneToMany;
 
 /**
  * The persistent class for the ATC database table.
@@ -33,6 +46,13 @@ public class Atc implements Serializable {
 	// bi-directional many-to-one association to Produkt
 	@OneToMany(mappedBy = "atc")
 	private List<Produkt> produkts;
+	
+	@ManyToMany
+	@JoinTable(
+		      name="ICD_ATC",
+		      joinColumns=@JoinColumn(name="ATC", referencedColumnName="_id"),
+		      inverseJoinColumns=@JoinColumn(name="ICD", referencedColumnName="_id"))
+	private List<Icd> icds;
 
 	public Atc() {
 	}
@@ -89,6 +109,20 @@ public class Atc implements Serializable {
 
 	public void setProdukts(List<Produkt> produkts) {
 		this.produkts = produkts;
+	}
+
+	/**
+	 * @return the icds
+	 */
+	public List<Icd> getIcds() {
+		return icds;
+	}
+
+	/**
+	 * @param icds the icds to set
+	 */
+	public void setIcds(List<Icd> icds) {
+		this.icds = icds;
 	}
 
 }

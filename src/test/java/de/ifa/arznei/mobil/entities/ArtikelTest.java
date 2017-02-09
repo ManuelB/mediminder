@@ -10,6 +10,7 @@ import org.junit.Test;
 public class ArtikelTest extends AbstractDatabaseTest {
 
 	@Test
+	@Ignore
 	public void testGetId() {
 		EntityManager em = getEntityManager();
 		List<Artikel> artikelList = em.createNamedQuery("Artikel.findAll", Artikel.class).getResultList();

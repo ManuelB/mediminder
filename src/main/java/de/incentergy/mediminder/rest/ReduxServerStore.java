@@ -156,14 +156,16 @@ public class ReduxServerStore {
 	@Timeout
 	public void sendNotification(Timer timer) {
 		RegularNotification regularNotification = em.find(RegularNotification.class, timer.getInfo());
+		if(regularNotification == null) {
+			log.warning(RegularNotification.class.getSimpleName()+" with Id: "+timer.getInfo()+" not found.");
+			return;
+		} 
 		try {
 			subscriptionService.send(regularNotification.getSubscription().getKey(),
 					"Bitte nehmen Sie von " + regularNotification.getMedicine() + " "
 							+ NumberFormat.getInstance().format(regularNotification.getQuantity()) + " "
 							+ ("C62".equals(regularNotification.getUnit()) ? "Stück" : regularNotification.getUnit()));
-		} catch (InvalidKeyException | NoSuchAlgorithmException | InvalidKeySpecException | NoSuchProviderException
-				| NoSuchPaddingException | IllegalBlockSizeException | BadPaddingException
-				| InvalidAlgorithmParameterException | IOException | JoseException e) {
+		} catch (Throwable e) {
 			log.log(Level.WARNING, "Could not send regular notification: " + timer.getInfo(), e);
 		}
 	}
