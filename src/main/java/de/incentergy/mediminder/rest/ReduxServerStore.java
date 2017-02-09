@@ -61,6 +61,10 @@ public class ReduxServerStore {
 	@Path("/ADD_MEDICINE")
 	@Consumes(MediaType.APPLICATION_JSON)
 	public void ADD_MEDICINE(JsonObject jsonObject) {
+		if(!jsonObject.containsKey("notificationSubscriptionKey")) {
+			log.warning("No 'notificationSubscriptionKey' given. Won't create reminder on server");
+			return;
+		}
 		String notificationSubscriptionKey = jsonObject.getString("notificationSubscriptionKey");
 		Subscription subscription = em.find(Subscription.class, notificationSubscriptionKey);
 		// "medicationSchedule": {
