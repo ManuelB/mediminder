@@ -140,7 +140,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 	      				<paper-item class="menu-trigger">{{item.ProduktDetails.Bezeichnung}}</paper-item>
 	      				<paper-menu class="menu-content">
 	      					<template is="dom-repeat" items="{{item.ProduktDetails.ArtikelDetails.results}}">
-	      						<paper-item on-click="onSelectProductWithAgent">{{item.Menge}}</paper-item>
+	      						<paper-item on-tap="onSelectProductWithAgent">{{item.Menge}}</paper-item>
 	      		 			</template>
 	      		 		</paper-menu>
 	      		</template>
@@ -161,14 +161,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     
     <!-- TODO: Replace with: http://spacee.xyz/polymer-components/paper-fab-menu/demo.html  -->
     <paper-fab-menu icon="add" position="vertical">
-		<paper-fab-menu-item label="PZN Barcode Scannen" icon="image:photo-camera" on-click="openPznScanDialog"></paper-fab-menu-item>
-		<paper-fab-menu-item label="PZN per Hand eingeben" icon="add" on-click="openPznEnterDialog"></paper-fab-menu-item>
+		<paper-fab-menu-item label="PZN Barcode Scannen" icon="image:photo-camera" on-tap="openPznScanDialog"></paper-fab-menu-item>
+		<paper-fab-menu-item label="PZN per Hand eingeben" icon="add" on-tap="openPznEnterDialog"></paper-fab-menu-item>
 	</paper-fab-menu>
     <paper-dialog id="pznScanDialog"></paper-dialog>
     <paper-dialog id="pznEnterDialog">
     	<paper-input id="pznNumber" always-float-label label="PZN Nummer" placeholder="z.B. 78597"></paper-input>
     	<div class="buttons">
-	    	<paper-button dialog-confirm on-click="processPZNNumber">Suchen</paper-button>
+	    	<paper-button dialog-confirm on-tap="processPZNNumber">Suchen</paper-button>
 	    </div>
     	<iron-ajax
     		id="ArnzneiMobilAjax"
