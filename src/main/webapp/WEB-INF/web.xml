@@ -6,7 +6,7 @@
 	<welcome-file-list>
 		<welcome-file>index.xhtml</welcome-file>
 	</welcome-file-list>
-	<!-- Force SSL for entire site -->
+	<!-- Force SSL for entire site 
 	<security-constraint>
 
 		<web-resource-collection>
@@ -18,5 +18,5 @@
 			<transport-guarantee>CONFIDENTIAL</transport-guarantee>
 		</user-data-constraint>
 
-	</security-constraint>
+	</security-constraint>-->
 </web-app>
