@@ -8,6 +8,7 @@
 <link rel="import" href="../bower_components/paper-time-picker/paper-time-picker.html">
 <link rel="import" href="../bower_components/paper-date-picker/paper-date-picker.html">
 <link rel="import" href="../bower_components/paper-dialog-scrollable/paper-dialog-scrollable.html">
+<link rel="import" href="../bower_components/polymer-responsive-dialog/responsive-dialog.html">
 
 
 <dom-module id="dosage-dialog">
@@ -15,11 +16,11 @@
   <template>
     <style>
     	paper-dialog-scrollable {
-    	    min-width: 40em;
-    	    min-height: 40em;
+    	    min-width: 20em;
+    	    min-height: 20em;
     	}
     </style>
-  		<paper-dialog id="dialog">
+  		<responsive-dialog id="dialog">
 	  		<h1>Erinnerungen</h1>
   		    <paper-dialog-scrollable>
 				  <paper-input label="Tägliche Einnahmen" type="number" step="1" min="1" max="24" value="{{dailyScheduleCount}}"></paper-input>
@@ -35,7 +36,7 @@
 	    	<div class="buttons">
 	  			<paper-button dialog-confirm on-tap="onAddDosage">Hinzufügen</paper-button>
   			</div>
-  		</paper-dialog>
+  		</responsive-dialog>
   </template>
   <script>
     Polymer({
@@ -64,7 +65,9 @@
            for(let i=0; i<Math.abs(diff); i++) {
              let newDailySchedules = this.medicationSchedule.dailySchedules.slice(0);
        		 if(diff > 0) {
-           	  if(newDailySchedules.length == 1) {
+           	  if(newDailySchedules.length == 0) {
+                 newDailySchedules.push({time: "8:00pm", quantity: 1, unit: "C62"});
+              } else if(newDailySchedules.length == 1) {
                  newDailySchedules.push({time: "8:00am", quantity: 1, unit: "C62"});
               } else {
             	  newDailySchedules.push({time: "12:00pm", quantity: 1, unit: "C62"});
