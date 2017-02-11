@@ -2,3 +2,4 @@
 src/main/data/20160711_AaA_ifap_DS_20160715.sqlite
 node_modules
 bower_components
+src/main/resources/mediminder.properties

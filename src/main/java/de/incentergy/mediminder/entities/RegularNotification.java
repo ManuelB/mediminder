@@ -22,8 +22,12 @@ public class RegularNotification {
 	private String medicine;
 	private Double quantity;
 	private String unit;
-	/* Value too long for column "TIMERHANDLE BINARY(255)": "X'aced00057372002e6f72672e6a626f73732e61732e656a62332e74696d6572736572766963652e54696d657248616e646c65496d706c000000000000000102... (299)"; SQL statement: */ 
-	@Column(length=4096)
+	/*
+	 * Value too long for column "TIMERHANDLE BINARY(255)":
+	 * "X'aced00057372002e6f72672e6a626f73732e61732e656a62332e74696d6572736572766963652e54696d657248616e646c65496d706c000000000000000102... (299)"
+	 * ; SQL statement:
+	 */
+	@Column(length = 4096)
 	private TimerHandle timerHandle;
 
 	@ManyToOne()
@@ -36,8 +40,12 @@ public class RegularNotification {
 	public RegularNotification(String medicine, JsonObject jsonObject) {
 		setId(UUID.randomUUID().toString());
 		setMedicine(medicine);
-		setTime(jsonObject.getString("time").toLowerCase());
-		setQuantity(jsonObject.getJsonNumber("quantity").doubleValue());
+		if (jsonObject.containsKey("time")) {
+			setTime(jsonObject.getString("time").toLowerCase());
+		}
+		if (jsonObject.containsKey("quantity")) {
+			setQuantity(jsonObject.getJsonNumber("quantity").doubleValue());
+		}
 		setUnit(jsonObject.getString("unit"));
 	}
 

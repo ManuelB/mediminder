@@ -97,7 +97,7 @@ public class Subscription {
 		String gcmapikey = properties.getProperty("mediminder.gcmapikey");
 		if (gcmapikey == null) {
 			log.warning("mediminder.gcmapikey not set in mediminder.properties. Please create file in: "
-					+ getClass().getResource("/") + " and set property 'mediminder.gcmapikey'");
+					+ getClass().getResource("/") + " and set property 'mediminder.gcmapikey'. You get it from e.g. here: https://console.firebase.google.com/project/www-mediminder-de/settings/cloudmessaging");
 			return;
 		}
 		pushService.setGcmApiKey(gcmapikey);
