@@ -13,10 +13,20 @@
 			<web-resource-name>Entire Application</web-resource-name>
 			<url-pattern>/*</url-pattern>
 		</web-resource-collection>
+		<auth-constraint>
+			<role-name>User</role-name>
+		</auth-constraint>
 
 		<user-data-constraint>
 			<transport-guarantee>CONFIDENTIAL</transport-guarantee>
 		</user-data-constraint>
 
 	</security-constraint>
+	<login-config>
+		<auth-method>DIGEST</auth-method>
+	</login-config>
+	<security-role>
+		<role-name>User</role-name>
+	</security-role>
+
 </web-app>
